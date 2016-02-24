@@ -1,7 +1,7 @@
 /* Template by freewebsitetemplates.com */
 body {
-	background: #077054;
-	color: #315f52;
+	background: #2E64FE;
+	color: #2E64FE;
 	font-family: 'latoregular';
 	font-size: 14px;
 	margin: 0;
@@ -38,7 +38,7 @@ p {
 	margin: 0;
 }
 p a {
-	color: #315f52;
+	color: #2E64FE;
 }
 p a:hover {
 	color: #451374;
