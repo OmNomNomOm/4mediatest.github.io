@@ -38,10 +38,10 @@ p {
 	margin: 0;
 }
 p a {
-	color: #0B0B61;
+	color: #E6E6E6;
 }
 p a:hover {
-	color: #451374;
+	color: #E6E6E6;
 }
 #header {
 	margin: 0 auto;
@@ -60,7 +60,7 @@ p a:hover {
 	text-decoration: none;
 }
 #header h1 a span {
-	color: #b6d8cf;
+	color: #0B0B61;
 	display: block;
 	font-family: 'nixie_oneregular';
 	font-size: 26px;
@@ -78,7 +78,7 @@ p a:hover {
 	position: relative;
 }
 #header ul#navigation li a {
-	color: #b6d8cf;
+	color: #0B0B61;
 	font-size: 18px;
 	padding: 0 46px;
 	text-align: center;
@@ -105,7 +105,7 @@ p a:hover {
 	display: block;
 }
 #header ul#navigation li ul li {
-	background: #077054;
+	background: #0B0B61;
 	display: block;
 	height: 46px;
 	line-height: 46px;
@@ -125,7 +125,7 @@ p a:hover {
 	padding: 45px 40px 46px;
 }
 #body > h2 {
-	color: #21a51e;
+	color: #E6E6E6;
 	font-family: 'nixie_oneregular';
 	font-size: 35px;
 	font-weight: normal;
@@ -147,7 +147,7 @@ p a:hover {
 }
 #body div#tagline h1 {
 	background: url(../images/bg-separator.png) no-repeat center bottom;
-	color: #21a51e;
+	color: #E6E6E6;
 	font-family: 'nixie_oneregular';
 	font-size: 100px;
 	font-weight: normal;
@@ -158,7 +158,7 @@ p a:hover {
 	text-transform: uppercase;
 }
 #body div#tagline p {
-	color: #21a51e;
+	color: #E6E6E6;
 	font-family: 'nixie_oneregular';
 	font-size: 100px;
 	line-height: 100px;
