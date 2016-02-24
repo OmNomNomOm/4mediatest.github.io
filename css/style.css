@@ -56,7 +56,7 @@ p a:hover {
 	text-align: center;
 }
 #header h1 a {
-	color: #99fa99;
+	color: #E6E6E6;
 	text-decoration: none;
 }
 #header h1 a span {
@@ -90,7 +90,7 @@ p a:hover {
 	color: #d3a3ff;
 }
 #header ul#navigation li.current a {
-	color: #99fa99;
+	color: #E6E6E6;
 }
 #header ul#navigation li ul {
 	display: none;
@@ -268,7 +268,7 @@ p a:hover {
 	background: #077054;
 	border: none;
 	border-radius: 5px;
-	color: #99fa99;
+	color: #E6E6E6;
 	cursor: pointer;
 	font-family: 'latoregular';
 	font-size: 14px;
@@ -365,7 +365,7 @@ p a:hover {
 	width: 500px;
 }
 #footer div span {
-	color: #99fa99;
+	color: #E6E6E6;
 	display: block;
 	font-size: 26px;
 	line-height: 24px;
