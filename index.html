@@ -102,7 +102,19 @@
 				<h3>The leading live video ad network</h3>
 				
 
-
+<a href="http://www.ellads.com/video/epom.mp4" style="display:block;width:350px;height:200px" id="flowplayer">
+    <img src="http://www.ellads.com/video/epom.jpg"/>
+</a>
+<script type="text/javascript" src="http://releases.flowplayer.org/js/flowplayer-3.2.9.min.js"></script>
+<script type="text/javascript">
+    flowplayer("flowplayer", "http://player.longtailvideo.com/flowplayer/flowplayer-3.2.7.swf",
+            {
+                plugins:{
+                    ova:{"ads":{"filterOnLinearAdMimeTypes":false,"pauseOnClickThrough":true,"replayNonLinearAds":false,"controls":{"skipAd":{"image":"http://www.ellads.com/img/skip-ad.png","minimumAdDuration":10,"width":60,"showAfterSeconds":5,"showForSeconds":5,"enabled":false,"height":15},"visible":false},"notice":{"type":"countdown"},"servers":[{"apiAddress":"http://www.ellads.com/vast.xml?key=c8bb9c7c11794a03be84d6408ede4485__amp__zone=__zone____amp__epomUrl=__page-url__","type":"direct"}],"schedule":[]},"debug":{"debugger":"firebug","levels":"fatal, config, vast_template, vpaid, http_calls"},"overlays":{"closeButton":{"image":"http://www.ellads.com/img/close-ad.png","width":15,"type":"custom","height":15}},"url":"http://player.longtailvideo.com/flowplayer/ova-trial.swf","delayAdRequestUntilPlay":true}
+                }
+            }
+    );
+</script>
 
 <!-- PLEASE INSERT THIS INTO THE BODY PART OF YOUR PAGE -->
 <!-- Beginning Async AdSlot 1 for Ad unit /Testing/Display-Esportsobserver.com  ### size: [[970,250],[970,90],[728,90]] -->
