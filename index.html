@@ -22,23 +22,19 @@
 	googletag.cmd.push(function() {
 
 var banner = googletag.sizeMapping().
-  addSize([1024,768], [970,250],[970,90],[728,90],[300,250],[300,600],[120,600],[160,600],[970,66]).
-  addSize([980,690], [728,90],[970,90],[728,90],[300,250],[300,600],[120,600],[160,600],[970,66]).
-  addSize([640,480], []).
+  addSize([1024,768], [970,250],[970,90],[728,90],[970,66]).
+  addSize([980,690], [728,90],[970,90],[970,66]).
   addSize([0,0], []).
   build();
   
    var mpu = googletag.sizeMapping().
   addSize([1024,768],[300,250]).
-  addSize([980,690], [300,250]).
-  addSize([640,480], [300,250]).
   addSize([0,0], [300,250]).
   build();
   
   var halfpage = googletag.sizeMapping().
   addSize([1024,768],[300,600],[120,600],[160,600]).
   addSize([980,690], [120,600],[160,600]).
-  addSize([640,480], [300,250]).
   addSize([0,0], [300,250]).
   build();
 
@@ -153,6 +149,10 @@ var banner = googletag.sizeMapping().
 
 			<h1>4MN</h1>
 				<h3>The leading live video ad network</h3>
+<div id='sm_player'>
+<img src="https://production.selectmedia.asia/sm.evt?eventType=INIT&cv=Webpals_APAC&campaignId=150801&smcreativeid=150801001" width="0" height="0"  style="position:absolute; visibility:hidden">
+</div>
+<script id='sm_main_script' src="https://cloud.selectmedia.asia/Code/sm_main_script_streamrail_minified.js?server=production&cv=Webpals_APAC&campaignId=150801&smcreativeid=150801001&cb=%%CACHEBUSTER%%&declaredurl=%%SITE%%&click=%%CLICK_URL_ESC%%"></script>
 
 
 
