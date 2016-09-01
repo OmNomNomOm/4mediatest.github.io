@@ -21,22 +21,6 @@
 <script type="text/javascript">
 	googletag.cmd.push(function() {
 
-var banner = googletag.sizeMapping().
-  addSize([1024,768], [970,250],[970,90],[728,90],[970,66]).
-  addSize([980,690], [728,90],[970,90],[970,66]).
-  addSize([0,0], []).
-  build();
-  
-   var mpu = googletag.sizeMapping().
-  addSize([1024,768],[300,250]).
-  addSize([0,0], [300,250]).
-  build();
-  
-  var halfpage = googletag.sizeMapping().
-  addSize([1024,768],[300,600],[120,600],[160,600]).
-  addSize([980,690], [120,600],[160,600]).
-  addSize([0,0], [300,250]).
-  build();
 
 		//Adslot 1 declaration
 		gptadslots[1]= googletag.defineSlot('/98544404/Testing/Display-4mediatest.github.io', [[1,1]],'div-gpt-ad-448912047942465811-1').
@@ -46,40 +30,33 @@ var banner = googletag.sizeMapping().
 		gptadslots[2]= googletag.defineSlot('/98544404/Testing/Display-4mediatest.github.io', [[970,250],[970,90],[728,90]],'div-gpt-ad-448912047942465811-2').
 			setTargeting('clplapo',['top-banner']).
 			setTargeting('clppos',['1']).
-			defineSizeMapping(banner).
-			setCollapseEmptyDiv(true).
 			addService(googletag.pubads());
 
 		//Adslot 3 declaration
 		gptadslots[3]= googletag.defineSlot('/98544404/Testing/Display-4mediatest.github.io', [[300,250],[300,600]],'div-gpt-ad-448912047942465811-3').
 			setTargeting('clplapo',['top-mpu']).
 			setTargeting('clppos',['1']).
-			defineSizeMapping(mpu).
-			setCollapseEmptyDiv(true).
 			addService(googletag.pubads());
 
 		//Adslot 4 declaration
 		gptadslots[4]= googletag.defineSlot('/98544404/Testing/Display-4mediatest.github.io', [[300,250],[120,600],[160,600],[300,600]],'div-gpt-ad-448912047942465811-4').
 			setTargeting('clplapo',['mid-mpu']).
 			setTargeting('clppos',['2']).
-			defineSizeMapping(halfpage).
-			setCollapseEmptyDiv(true).
 			addService(googletag.pubads());
 
 		//Adslot 5 declaration
 		gptadslots[5]= googletag.defineSlot('/98544404/Testing/Display-4mediatest.github.io', [[300,250],[120,600],[160,600],[300,600]],'div-gpt-ad-448912047942465811-5').
 			setTargeting('clplapo',['bottom-mpu']).
 			setTargeting('clppos',['2']).
-			defineSizeMapping(halfpage).
-			setCollapseEmptyDiv(true).
+			
 			addService(googletag.pubads());
 
 		//Adslot 6 declaration
 		gptadslots[6]= googletag.defineSlot('/98544404/Testing/Display-4mediatest.github.io', [[970,66],[970,90],[728,90]],'div-gpt-ad-448912047942465811-6').
 			setTargeting('clplapo',['bottom-banner']).
 			setTargeting('clppos',['2']).
-			defineSizeMapping(banner).
-			setCollapseEmptyDiv(true).
+			
+			
 			addService(googletag.pubads());
 
 		//Adslot 7 declaration - Out of Page
