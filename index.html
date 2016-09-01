@@ -20,17 +20,47 @@
 <script type="text/javascript">
 	googletag.cmd.push(function() {
 
+var banner = googletag.sizeMapping().
+  addSize([1024,768], [970,250],[970,90],[728,90],[970,66]).
+  addSize([980,690], [728,90],[970,90],[970,66]).
+  addSize([0,0], []).
+  build();
+  
+   var mpu = googletag.sizeMapping().
+  addSize([1024,768],[300,250]).
+  addSize([0,0], [300,250]).
+  build();
+  
+  var halfpage = googletag.sizeMapping().
+  addSize([1024,768],[300,600],[120,600],[160,600]).
+  addSize([980,690], [120,600],[160,600]).
+  addSize([0,0], [300,250]).
+  build();
+
+
 		//Adslot 1 declaration
-		gptadslots[1]= googletag.defineSlot('/98544404/Testing/Display-4mediatest.github.io', [[970,250],[970,90],[728,90]],'div-gpt-ad-688106746086265424-1').addService(googletag.pubads());
+		gptadslots[1]= googletag.defineSlot('/98544404/Testing/Display-4mediatest.github.io', [[970,250],[970,90],[728,90]],'div-gpt-ad-688106746086265424-1').
+		defineSizeMapping(banner).
+		setCollapseEmptyDiv(true).
+		addService(googletag.pubads());
 
 		//Adslot 2 declaration
-		gptadslots[2]= googletag.defineSlot('/98544404/Testing/Display-4mediatest.github.io', [[300,250]],'div-gpt-ad-688106746086265424-2').addService(googletag.pubads());
+		gptadslots[2]= googletag.defineSlot('/98544404/Testing/Display-4mediatest.github.io', [[300,250]],'div-gpt-ad-688106746086265424-2').
+		defineSizeMapping(banner).
+		setCollapseEmptyDiv(true).
+		addService(googletag.pubads());
 
 		//Adslot 3 declaration
-		gptadslots[3]= googletag.defineSlot('/98544404/Testing/Display-4mediatest.github.io', [[300,250],[300,600],[120,600],[160,600]],'div-gpt-ad-688106746086265424-3').addService(googletag.pubads());
+		gptadslots[3]= googletag.defineSlot('/98544404/Testing/Display-4mediatest.github.io', [[300,250],[300,600],[120,600],[160,600]],'div-gpt-ad-688106746086265424-3').
+		defineSizeMapping(banner).
+		setCollapseEmptyDiv(true).
+		addService(googletag.pubads());
 
 		//Adslot 4 declaration
-		gptadslots[4]= googletag.defineSlot('/98544404/Testing/Display-4mediatest.github.io', [[728,90],[970,90],[970,66]],'div-gpt-ad-688106746086265424-4').addService(googletag.pubads());
+		gptadslots[4]= googletag.defineSlot('/98544404/Testing/Display-4mediatest.github.io', [[728,90],[970,90],[970,66]],'div-gpt-ad-688106746086265424-4').
+		defineSizeMapping(banner).
+		setCollapseEmptyDiv(true).
+		addService(googletag.pubads());
 
 		googletag.pubads().enableSingleRequest();
 		googletag.pubads().enableAsyncRendering();
