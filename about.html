@@ -9,29 +9,62 @@
 	<link rel="stylesheet" type="text/css" href="css/mobile.css">
 	<script type='text/javascript' src='js/mobile.js'></script>
 	
-	<script type='text/javascript'>
-  var googletag = googletag || {};
-  googletag.cmd = googletag.cmd || [];
-  (function() {
-    var gads = document.createElement('script');
-    gads.async = true;
-    gads.type = 'text/javascript';
-    var useSSL = 'https:' == document.location.protocol;
-    gads.src = (useSSL ? 'https:' : 'http:') +
-      '//www.googletagservices.com/tag/js/gpt.js';
-    var node = document.getElementsByTagName('script')[0];
-    node.parentNode.insertBefore(gads, node);
-  })();
+<!-- Start: GPT Async -->
+<script type='text/javascript'>
+	var gptadslots=[];
+	var googletag = googletag || {};
+	googletag.cmd = googletag.cmd || [];
+	(function(){ var gads = document.createElement('script');
+		gads.async = true; gads.type = 'text/javascript';
+		var useSSL = 'https:' == document.location.protocol;
+		gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+		var node = document.getElementsByTagName('script')[0];
+		node.parentNode.insertBefore(gads, node);
+	})();
 </script>
 
-<script type='text/javascript'>
-  googletag.cmd.push(function() {
-    googletag.defineSlot('/98544404/Testing/native-ad-test', 'fluid', 'div-gpt-ad-1459954702295-0').addService(googletag.pubads());
-    googletag.pubads().enableSingleRequest();
-    googletag.pubads().collapseEmptyDivs();
-    googletag.enableServices();
-  });
+<script type="text/javascript">
+	googletag.cmd.push(function() {
+
+var banner = googletag.sizeMapping().
+  addSize([1024,768], [970,250],[970,90],[728,90],[300,250],[300,600],[120,600],[160,600],[970,66]).
+  addSize([980,690], [728,90],[970,90],[728,90],[300,250],[300,600],[120,600],[160,600],[970,66]).
+   addSize([0,0], []).
+  build();
+  
+   var halfpage = googletag.sizeMapping().
+  addSize([1024,768],[300,600],[120,600],[160,600]).
+  addSize([980,690], [120,600],[160,600]).
+  addSize([640,480], [300,250]).
+  addSize([0,0], [300,250]).
+  build();
+
+
+		//Adslot 1 declaration
+		gptadslots[1]= googletag.defineSlot('/98544404/Testing/Display-4mediatest.github.io', [[970,250],[970,90],[728,90]],'div-gpt-ad-688106746086265424-1').
+		 defineSizeMapping(banner).
+		setCollapseEmptyDiv(true).
+		addService(googletag.pubads());
+
+		//Adslot 2 declaration
+		gptadslots[2]= googletag.defineSlot('/98544404/Testing/Display-4mediatest.github.io', [[300,250]],'div-gpt-ad-688106746086265424-2')
+		addService(googletag.pubads());
+		
+		//Adslot 3 declaration
+		gptadslots[3]= googletag.defineSlot('/98544404/Testing/Display-4mediatest.github.io', [[300,250],[300,600],[120,600],[160,600]],'div-gpt-ad-688106746086265424-3').
+		defineSizeMapping(halfpage).
+		setCollapseEmptyDiv(true).
+		addService(googletag.pubads());
+				
+		//Adslot 4 declaration
+		gptadslots[4]= googletag.defineSlot('/98544404/Testing/Display-4mediatest.github.io', [[728,90],[970,90],[970,66]],'div-gpt-ad-688106746086265424-4').
+		googletag.pubads().enableSingleRequest();
+		googletag.pubads().enableAsyncRendering();
+		googletag.enableServices();
+	});
 </script>
+<!-- End: GPT -->
+	
 </head>
 <body>
 	<div id="header">
@@ -65,7 +98,43 @@
 			<div>
 				<h3>We Have Free Templates for Everyone</h3>
 				<p>
-					Our website templates are created with inspiration, checked for quality and originality and meticulously sliced and coded. What's more, they're absolutely free! You can do a lot with them. You can modify them. You can use them to design websites for clients, so long as you agree with the <a href="https://freewebsitetemplates.com/about/terms/">Terms of Use</a>. You can even remove all our links if you want to.
+					
+	
+<!-- Beginning Async AdSlot 1 for Ad unit Testing/Display-4mediatest.github.io  ### size: [[970,250],[970,90],[728,90]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[1]]) -->
+<div id='div-gpt-ad-688106746086265424-1'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-688106746086265424-1'); });
+	</script>
+</div>
+<!-- End AdSlot 1 -->
+
+<!-- Beginning Async AdSlot 2 for Ad unit Testing/Display-4mediatest.github.io  ### size: [[300,250]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[2]]) -->
+<div id='div-gpt-ad-688106746086265424-2'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-688106746086265424-2'); });
+	</script>
+</div>
+<!-- End AdSlot 2 -->
+
+<!-- Beginning Async AdSlot 3 for Ad unit Testing/Display-4mediatest.github.io  ### size: [[300,250],[300,600],[120,600],[160,600]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[3]]) -->
+<div id='div-gpt-ad-688106746086265424-3'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-688106746086265424-3'); });
+	</script>
+</div>
+<!-- End AdSlot 3 -->
+
+<!-- Beginning Async AdSlot 4 for Ad unit Testing/Display-4mediatest.github.io  ### size: [[728,90],[970,90],[970,66]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[4]]) -->
+<div id='div-gpt-ad-688106746086265424-4'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-688106746086265424-4'); });
+	</script>
+</div>
+<!-- End AdSlot 4 -->
 				</p>
 				<h3>We Have More Templates for You</h3>
 				<p>
