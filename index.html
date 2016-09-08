@@ -20,8 +20,8 @@
 	googletag.cmd.push(function() {
 
 var banner = googletag.sizeMapping().
-  addSize([1024,768], [970,250],[970,90],[728,90],[300,250],[300,600],[120,600],[160,600],[970,66]).
-  addSize([980,690], [728,90],[970,90],[728,90],[300,250],[300,600],[120,600],[160,600],[970,66]).
+  addSize([1024,768], [970,250],[970,90],[728,90],[970,66]).
+  addSize([980,690], [728,90],[970,90],[728,90],[970,66]).
    addSize([0,0], []).
   build();
   
@@ -50,7 +50,9 @@ var banner = googletag.sizeMapping().
 		addService(googletag.pubads());
 				
 		//Adslot 4 declaration
-		gptadslots[4]= googletag.defineSlot('/98544404/Testing/Display-4mediatest.github.io', [[728,90],[970,90],[970,66]],'div-gpt-ad-688106746086265424-4').addService(googletag.pubads());
+		gptadslots[4]= googletag.defineSlot('/98544404/Testing/Display-4mediatest.github.io', [[728,90],[970,90],[970,66]],'div-gpt-ad-688106746086265424-4').
+		addService(googletag.pubads());
+			
 		googletag.pubads().enableSingleRequest();
 		googletag.pubads().enableAsyncRendering();
 		googletag.enableServices();
