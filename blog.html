@@ -24,58 +24,79 @@
 </script>
 
 <script type="text/javascript">
+	googletag.cmd.push(function() {
 
-        googletag.cmd.push(function() {
+	var topbanner = googletag.sizeMapping().
+		addSize([1024,768], [[970,250],[970,90],[728,90]]).
+		addSize([730,100], [728,90]).
+		addSize([350,100], [[300,100],[300,50]]).
+		addSize([0,0], []).
+		build();
+		
+	var bottombanner = googletag.sizeMapping().
+		addSize([1024,768], [[970,66],[970,90],[728,90]]).
+		addSize([730,100], [728,90]).
+		addSize([350,100], [[300,100],[300,50]]).
+		addSize([0,0], []).
+		build();
 
-            //Adslot 1 declaration
-            gptadslots[1]= googletag.defineSlot('/98544404/cybersport.pl/homepage/hpto', [[1,1]],'div-gpt-ad-995486453060815237-1').addService(googletag.pubads());
+		//Adslot 1 declaration
+		gptadslots[1]= googletag.defineSlot('/98544404/wowchakra.de', [[1,1]],'div-gpt-ad-175077616251224484-1').
+		addService(googletag.pubads());
 
-            //Adslot 10 declaration
-            gptadslots[10]= googletag.defineSlot('/98544404/cybersport.pl/rest-of-page/hpto', [[1,1]],'div-gpt-ad-995486453060815237-10').addService(googletag.pubads());
+		//Adslot 2 declaration
+		gptadslots[2]= googletag.defineSlot('/98544404/wowchakra.com', [[728,90],[970,66],[970,250],[300,100],[300,50]],'div-gpt-ad-175077616251224484-2').
+		setTargeting('clplapo',['top-banner']).
+		setTargeting('clppos',['1']).
+		defineSizeMapping(topbanner).
+		setCollapseEmptyDiv(true).
+		addService(googletag.pubads());
 
-            //Adslot 11 declaration
-            gptadslots[11]= googletag.defineSlot('/98544404/cybersport.pl/in-news', 'fluid','div-gpt-ad-995486453060815237-11').addService(googletag.pubads());
+		//Adslot 3 declaration
+		gptadslots[3]= googletag.defineSlot('/98544404/wowchakra.com', [[300,250]],'div-gpt-ad-175077616251224484-3').
+		setTargeting('clplapo',['top-mpu']).
+		setTargeting('clppos',['1']).
+		addService(googletag.pubads());
 
-            //Adslot 2 declaration
-            gptadslots[2]= googletag.defineSlot('/98544404/cybersport.pl/homepage/top-banner', [[728,90],[800,200],[970,90],[970,200],[970,250]],'div-gpt-ad-995486453060815237-2').setTargeting('clplapo',['top-banner']).setTargeting('clppos',['1']).addService(googletag.pubads());
+		//Adslot 3 declaration
+		gptadslots[4]= googletag.defineSlot('/98544404/wowchakra.com', [[300,250]],'div-gpt-ad-175077616251224484-4').
+		setTargeting('clplapo',['mid-mpu']).
+		setTargeting('clppos',['2']).
+		addService(googletag.pubads());
 
-            //Adslot 3 declaration
-            gptadslots[3]= googletag.defineSlot('/98544404/cybersport.pl/homepage/top-mpu', [[300,250],[300,600]],'div-gpt-ad-995486453060815237-3').setTargeting('clplapo',['top-mpu']).setTargeting('clppos',['1']).addService(googletag.pubads());
+		//Adslot 5 declaration
+		gptadslots[5]= googletag.defineSlot('/98544404/wowchakra.com', [[300,600],[120,600],[160,600]],'div-gpt-ad-175077616251224484-5').
+		setTargeting('clplapo',['mid-banner']).
+		setTargeting('clppos',['2']).
+		addService(googletag.pubads());
 
-            //Adslot 4 declaration
-            gptadslots[4]= googletag.defineSlot('/98544404/cybersport.pl/homepage/mid-mpu', [[300,250]],'div-gpt-ad-995486453060815237-4').setTargeting('clplapo',['mid-mpu']).setTargeting('clppos',['2']).addService(googletag.pubads());
+		//Adslot 6 declaration
+		gptadslots[6]= googletag.defineSlot('/98544404/wowchakra.com', [[300,250]],'div-gpt-ad-175077616251224484-6').
+		setTargeting('clplapo',['bottom-mpu']).
+		setTargeting('clppos',['2']).
+		addService(googletag.pubads());
 
-            //Adslot 5 declaration
-            gptadslots[5]= googletag.defineSlot('/98544404/cybersport.pl/homepage/bottom-banner', [[728,90],[970,66],[970,90]],'div-gpt-ad-995486453060815237-5').setTargeting('clplapo',['bottom-banner']).setTargeting('clppos',['2']).addService(googletag.pubads());
+		//Adslot 7 declaration
+		gptadslots[7]= googletag.defineSlot('/98544404/wowchakra.com', [[728,90],[970,66],[970,90],[300,100],[300,50]],'div-gpt-ad-175077616251224484-7').
+		setTargeting('clplapo',['bottom-banner']).
+		setTargeting('clppos',['2']).
+		defineSizeMapping(bottombanner).
+		setCollapseEmptyDiv(true).
+		addService(googletag.pubads());
 
-            //Adslot 6 declaration
-            gptadslots[6]= googletag.defineSlot('/98544404/cybersport.pl/rest-of-page/top-banner', [[728,90],[800,200],[970,90],[970,200],[970,250]],'div-gpt-ad-995486453060815237-6').setTargeting('clplapo',['top-banner']).setTargeting('clppos',['1']).addService(googletag.pubads());
+		//Adslot oop declaration
+		gptadslots[0] = googletag.defineOutOfPageSlot('/98544404/wowchakra.de', 'div-gpt-ad-175077616251224484-oop').addService(googletag.pubads());
+		
+		//Adslot Outstream oop declaration
+		gptadslots[10] = googletag.defineOutOfPageSlot('/98544404/Outstream', 'div-gpt-ad-474747410373361431-oop').addService(googletag.pubads());
 
-            //Adslot 7 declaration
-            gptadslots[7]= googletag.defineSlot('/98544404/cybersport.pl/rest-of-page/top-mpu', [[300,250],[300,600]],'div-gpt-ad-995486453060815237-7').setTargeting('clplapo',['top-mpu']).setTargeting('clppos',['1']).addService(googletag.pubads());
-
-            //Adslot 8 declaration
-            gptadslots[8]= googletag.defineSlot('/98544404/cybersport.pl/rest-of-page/mid-mpu', [[300,250]],'div-gpt-ad-995486453060815237-8').setTargeting('clplapo',['mid-mpu']).setTargeting('clppos',['2']).addService(googletag.pubads());
-
-            //Adslot 9 declaration
-            gptadslots[9]= googletag.defineSlot('/98544404/cybersport.pl/rest-of-page/bottom-banner', [[728,90],[970,66],[970,90]],'div-gpt-ad-995486453060815237-9').setTargeting('clplapo',['bottom-banner']).setTargeting('clppos',['2']).addService(googletag.pubads());
-
-            //Adslot oop declaration
-            gptadslots[0] = googletag.defineOutOfPageSlot('/98544404/cybersport.pl', 'div-gpt-ad-995486453060815237-oop').addService(googletag.pubads());
-	    
-	´   //Adslot Outstream oop declaration
-	     gptadslots[12] = googletag.defineOutOfPageSlot('/98544404/Outstream', 'div-gpt-ad-474747410373361431-oop').addService(googletag.pubads());
-
-            googletag.pubads().enableSingleRequest();
-	    googletag.pubads().setTargeting('clauone',['cybersport.pl']).setTargeting('clurl',['www.cybersport.pl']).setTargeting('clcogrp',['game']).setTargeting('clcontentid',['4mn']);
-            googletag.pubads().collapseEmptyDivs();
-            googletag.pubads().enableAsyncRendering();
-            googletag.enableServices();
-        });
-    
-	
-	
-		</script>
+		googletag.pubads().enableSingleRequest();
+		googletag.pubads().setTargeting('clauone',['wowchakra.com']).setTargeting('clurl',['www.wowchakra.com']).setTargeting('clgati',['wow'].setTargeting('clcogrp',['game']).setTargeting('clcontentid',['4mn']);
+		googletag.pubads().enableAsyncRendering();
+		googletag.enableServices();
+	});
+</script>
+<!-- End: GPT -->
 	
 
 	
@@ -117,40 +138,89 @@
 				<p>
 					Duis ultrices tortor non felis convallis bibendum. Maecenas diam velit, sollicitudin at imperdiet ac, consectetur non nibh. Etiam eget dapibus nulla. Nulla placerat mauris ut elit placerat luctus. Aliquam porttitor leo non nisl scelerisque sollicitudin.
 					
-						<div id='div-gpt-ad-474747410373361431-oop'>
+	
+<!-- Beginning Async AdSlot 1 for Ad unit wowchakra.com  ### size: [[1,1]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[1]]) -->
+<div id='div-gpt-ad-175077616251224484-1'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-175077616251224484-1'); });
+	</script>
+</div>
+<!-- End AdSlot 1 -->	
+	
+<!-- Beginning Async AdSlot 2 for Ad unit wowchakra.com  ### size: [[728,90],[970,66],[970,250],[300,100],[300,50]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[2]]) -->
+<div id='div-gpt-ad-175077616251224484-2'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-175077616251224484-2'); });
+	</script>
+</div>
+<!-- End AdSlot 2 -->
+
+<!-- Beginning Async AdSlot 3 for Ad unit wowchakra.com  ### size: [[300,250]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[3]]) -->
+<div id='div-gpt-ad-175077616251224484-3'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-175077616251224484-3'); });
+	</script>
+</div>
+<!-- End AdSlot 3 -->
+
+<!-- Beginning Async AdSlot 4 for Ad unit wowchakra.com  ### size: [[300,250]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[4]]) -->
+<div id='div-gpt-ad-175077616251224484-4'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-175077616251224484-4'); });
+	</script>
+</div>
+<!-- End AdSlot 4 -->
+
+<!-- Beginning Async AdSlot 5 for Ad unit wowchakra.com  ### size: [[300,600],[120,600],[160,600]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[5]]) -->
+<div id='div-gpt-ad-175077616251224484-5'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-175077616251224484-5'); });
+	</script>
+</div>
+<!-- End AdSlot 5 -->
+
+<!-- Beginning Async AdSlot 6 for Ad unit wowchakra.com  ### size: [[300,250]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[6]]) -->
+<div id='div-gpt-ad-175077616251224484-6'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-175077616251224484-6'); });
+	</script>
+</div>
+<!-- End AdSlot 6 -->
+
+<!-- Beginning Async AdSlot 7 for Ad unit wowchakra.com  ### size: [[728,90],[970,66],[300,100],[300,50]] -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[7]]) -->
+<div id='div-gpt-ad-175077616251224484-7'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-175077616251224484-7'); });
+	</script>
+</div>
+<!-- End AdSlot 7 -->
+
+<!-- Beginning Async AdSlot oop for Ad unit wowchakra.com  ### size:  -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[0]]) -->
+<div id='div-gpt-ad-175077616251224484-oop'>
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-175077616251224484-oop'); });
+	</script>
+</div>
+<!-- End AdSlot oop -->
+
+<div id='div-gpt-ad-474747410373361431-oop'>
 	<script type='text/javascript'>
 		googletag.cmd.push(function() { googletag.display('div-gpt-ad-474747410373361431-oop'); });
 	</script>
-	</div>
-
-
-<div id='div-gpt-ad-995486453060815237-2'>
-	<script type='text/javascript'>
-		googletag.cmd.push(function() { googletag.display('div-gpt-ad-995486453060815237-2'); });
-	</script>
-	</div>
+</div>
 
 
 
-<div id='div-gpt-ad-995486453060815237-3'>
-	<script type='text/javascript'>
-		googletag.cmd.push(function() { googletag.display('div-gpt-ad-995486453060815237-3'); });
-	</script>
-	</div>
 
 
-<div id='div-gpt-ad-995486453060815237-4'>
-	<script type='text/javascript'>
-		googletag.cmd.push(function() { googletag.display('div-gpt-ad-995486453060815237-4'); });
-	</script>
-	</div>
-
-
-<div id='div-gpt-ad-995486453060815237-5'>
-	<script type='text/javascript'>
-		googletag.cmd.push(function() { googletag.display('div-gpt-ad-995486453060815237-5'); });
-	</script>
-	</div>
 
 				</p>
 			</li>
