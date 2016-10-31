@@ -174,7 +174,16 @@ googletag.defineOutOfPageSlot('/98544404/Outstream', 'div-gpt-ad-1403084946324-6
 .setTargeting('play_language', "en_US")
 .setTargeting('play_country', "DE");
 		//Adslot Outstream oop declaration
-	    	 gptadslots[12] = googletag.defineOutOfPageSlot('/98544404/Outstream', 'div-gpt-ad-474747410373361431-oop').addService(googletag.pubads());
+gptadslots[12] = googletag.defineOutOfPageSlot('/98544404/Outstream', 'div-gpt-ad-474747410373361431-oop').addService(googletag.pubads())
+.setTargeting('play_premium', "false")
+.setTargeting('play_show_ads', "true")
+.setTargeting('play_trusted', 0)
+.setTargeting('play_game_levels', "")
+.setTargeting('play_gender', "")
+.setTargeting('play_age', "")
+.setTargeting('clauone', ['play.eslgaming.com'])
+.setTargeting('play_language', "en_US")
+.setTargeting('play_country', "DE");
 googletag.pubads().collapseEmptyDivs(true);
 googletag.pubads().enableSingleRequest();
 googletag.pubads().setTargeting('clauone',['Testing']).setTargeting('clurl',['http://4mediatest.github.io/playtest.html']).setTargeting('clcogrp',['game']).setTargeting('clcontentid',['4mn']);
