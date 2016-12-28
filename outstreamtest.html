@@ -17,72 +17,41 @@
 <script type="text/javascript">
 	googletag.cmd.push(function() {
 
-	var topbanner = googletag.sizeMapping().
-		addSize([1024,768], [[970,250],[970,90],[728,90]]).
-		addSize([730,100], [728,90]).
-		addSize([350,100], [[300,100],[300,50]]).
-		addSize([0,0], []).
-		build();
-		
-	var bottombanner = googletag.sizeMapping().
-		addSize([1024,768], [[970,66],[970,90],[728,90]]).
-		addSize([730,100], [728,90]).
-		addSize([350,100], [[300,100],[300,50]]).
-		addSize([0,0], []).
-		build();
 
 		//Adslot 1 declaration
-		gptadslots[1]= googletag.defineSlot('/98544404/wowchakra.de', [[1,1]],'div-gpt-ad-175077616251224484-1').
+		gptadslots[1]= googletag.defineSlot('/98544404/wowchakra.com', [[728,90]],'div-gpt-ad-680900054502655445-1').
+		setTargeting('clplapo',['top-banner']).
+		setTargeting('clppos',['1']).
 		addService(googletag.pubads());
 
 		//Adslot 2 declaration
-		gptadslots[2]= googletag.defineSlot('/98544404/wowchakra.com', [[728,90],[970,66],[970,250],[300,100],[300,50]],'div-gpt-ad-175077616251224484-2').
-		setTargeting('clplapo',['top-banner']).
-		setTargeting('clppos',['1']).
-		defineSizeMapping(topbanner).
-		setCollapseEmptyDiv(true).
-		addService(googletag.pubads());
-
-		//Adslot 3 declaration
-		gptadslots[3]= googletag.defineSlot('/98544404/wowchakra.com', [[300,250]],'div-gpt-ad-175077616251224484-3').
+		gptadslots[2]= googletag.defineSlot('/98544404/wowchakra.com', [[300,250]],'div-gpt-ad-680900054502655445-2').
 		setTargeting('clplapo',['top-mpu']).
 		setTargeting('clppos',['1']).
 		addService(googletag.pubads());
 
 		//Adslot 3 declaration
-		gptadslots[4]= googletag.defineSlot('/98544404/wowchakra.com', [[300,250]],'div-gpt-ad-175077616251224484-4').
-		setTargeting('clplapo',['mid-mpu']).
-		setTargeting('clppos',['2']).
-		addService(googletag.pubads());
-
-		//Adslot 5 declaration
-		gptadslots[5]= googletag.defineSlot('/98544404/wowchakra.com', [[300,600],[120,600],[160,600]],'div-gpt-ad-175077616251224484-5').
-		setTargeting('clplapo',['mid-banner']).
-		setTargeting('clppos',['2']).
-		addService(googletag.pubads());
-
-		//Adslot 6 declaration
-		gptadslots[6]= googletag.defineSlot('/98544404/wowchakra.com', [[300,250]],'div-gpt-ad-175077616251224484-6').
+		gptadslots[3]= googletag.defineSlot('/98544404/wowchakra.com', [[300,250]],'div-gpt-ad-680900054502655445-3').
 		setTargeting('clplapo',['bottom-mpu']).
 		setTargeting('clppos',['2']).
 		addService(googletag.pubads());
 
-		//Adslot 7 declaration
-		gptadslots[7]= googletag.defineSlot('/98544404/wowchakra.com', [[728,90],[970,66],[970,90],[300,100],[300,50]],'div-gpt-ad-175077616251224484-7').
+		//Adslot 4 declaration
+		gptadslots[4]= googletag.defineSlot('/98544404/wowchakra.com', [[728,90],'div-gpt-ad-680900054502655445-4').
 		setTargeting('clplapo',['bottom-banner']).
 		setTargeting('clppos',['2']).
-		defineSizeMapping(bottombanner).
-		setCollapseEmptyDiv(true).
 		addService(googletag.pubads());
 
-		//Adslot oop declaration
-		gptadslots[0] = googletag.defineOutOfPageSlot('/98544404/wowchakra.de', 'div-gpt-ad-175077616251224484-oop').addService(googletag.pubads());
-		
+		//Adslot 5 declaration - Out of Page
+		gptadslots[5] = googletag.defineOutOfPageSlot('/98544404/wowchakra.com', 'div-gpt-ad-680900054502655445-5').
+		addService(googletag.pubads());
+
 		//Adslot Outstream oop declaration
-		gptadslots[10] = googletag.defineOutOfPageSlot('/98544404/Outstream', 'div-gpt-ad-474747410373361431-oop').addService(googletag.pubads());
+		gptadslots[10] = googletag.defineOutOfPageSlot('/98544404/Outstream', 'div-gpt-ad-474747410373361431-oop').
+		addService(googletag.pubads());
 
 		googletag.pubads().enableSingleRequest();
-		googletag.pubads().setTargeting('clauone',['wowchakra.com']).setTargeting('clurl',['www.wowchakra.com']).setTargeting('clgati',['wow'].setTargeting('clcogrp',['game']).setTargeting('clcontentid',['4mn']);
+		googletag.pubads().setTargeting('clurl',['www.wowchakra.com']).setTargeting('clauone',['wowchakra.com']).setTargeting('clcontentid',['4mn']);
 		googletag.pubads().enableAsyncRendering();
 		googletag.enableServices();
 	});
@@ -112,11 +81,14 @@
 	Outstream here
 	<br/>
 	<div id="outstream">
-	<div id='div-gpt-ad-474747410373361431-oop'>
+<!-- Beginning Async AdSlot 10 for Ad unit Manga-Tube.com  ### size: Out of Page -->
+<!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[10]]) -->
+<div id='div-gpt-ad-474747410373361431-oop'>
 	<script type='text/javascript'>
 		googletag.cmd.push(function() { googletag.display('div-gpt-ad-474747410373361431-oop'); });
 	</script>
 </div>
+<!-- End AdSlot 10 -->
 </div>
 
 	<br />	
