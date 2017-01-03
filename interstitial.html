@@ -21,6 +21,20 @@
   
 </head>
 <body>
+
+<div id="mobile_inters" style="width:100%; height:100%; left:0px; top:0px; position:fixed; z-index:5 ; background-color: #333333 ; opacity:0.5 ; display:none ; "></div>
+<div id="mobile_inters_holder" style="width:100%; height:100%; left:0px; top:0px; position:fixed; z-index:5 ;  text-align: right ; display:none ;">
+<div id = "mobile_pos" style="line-height:29px; display: block ; margin: 0 auto 0 auto ;">
+<a href="javascript:close_mobile_inters()">< X </a>
+</div></div>
+<script>
+function close_mobile_inters()
+{
+document.getElementById("mobile_inters").style.display = "none";
+document.getElementById("mobile_inters_holder").style.display = "none";
+}
+</script>
+
 <!-- Async AdSlot 1 for Ad unit 'Testing/Display-4mediatest.github.io' ### Size: Out of Page -->
 <!-- Adslot's refresh function: googletag.pubads().refresh([gptadslots[0]]) -->
 <div id='div-gpt-ad-71905-1'>
