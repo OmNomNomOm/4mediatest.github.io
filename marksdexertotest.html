@@ -124,10 +124,10 @@ function powerpress_pinw(pinw_url){window.open(pinw_url, 'PowerPressPlayer','too
 		build(); 
 	  	  	  
     //Adslot 1 declaration
-    gptadslots.push(googletag.defineSlot('/98544404/dexerto.com', [[1,1]], 'div-gpt-ad-31242-1')
+    gptadslots.push(googletag.defineSlot('/98544404/Testing/Display-Dexerto.com', [[1,1]], 'div-gpt-ad-31242-1')
                              .addService(googletag.pubads()));
     //Adslot 2 declaration
-    gptadslots.push(googletag.defineSlot('/98544404/dexerto.com', [[970,250],[970,90],[300,50],[320,90],[300,100],[728,90],[320,50],[970,140],[970,210]], 'div-gpt-ad-31242-2')
+    gptadslots.push(googletag.defineSlot('/98544404/Testing/Display-Dexerto.com', [[970,250],[970,90],[300,50],[320,90],[300,100],[728,90],[320,50],[970,140],[970,210]], 'div-gpt-ad-31242-2')
                              .setTargeting('clppos', ['1'])
                              .setTargeting('clplapo', ['top-banner'])
 			     .defineSizeMapping(topbanner)
@@ -184,8 +184,7 @@ function powerpress_pinw(pinw_url){window.open(pinw_url, 'PowerPressPlayer','too
     googletag.pubads().enableSingleRequest();
     googletag.pubads().setTargeting('clauone', ['dexerto.com'])
                              .setTargeting('clurl', ['www.dexerto.com'])
-			     .setTargeting('hostpre', ['externaltest'])
-                             .setTargeting('clcontentid', ['4mn']);
+		         .setTargeting('clcontentid', ['4mn']);
     googletag.pubads().collapseEmptyDivs();
     googletag.enableServices();
   });
