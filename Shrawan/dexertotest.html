@@ -99,7 +99,94 @@ var title = {"unfolded":"Expand","folded":"Collapse"};
   ga('send', 'pageview');
 
 </script>
-<script src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+        <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+  var gptadslots = [];
+  var googletag = googletag || {cmd:[]};
+</script>
+<script>
+  googletag.cmd.push(function() {
+	  
+	  	var topbanner = googletag.sizeMapping().
+		addSize([1024,768], [[970,250],[970,90],[728,90],[970,140],[970,210]]).
+		addSize([730,100], [728,90]).
+		addSize([350,100], [[300,100],[300,50],[320,50],[320,90]]).
+		addSize([0,0], [[300,100],[300,50]]).
+		build();
+		
+		var bottombanner = googletag.sizeMapping().
+		addSize([1024,768], [[970,66],[970,90],[728,90]]).
+		addSize([730,100], [728,90]).
+		addSize([350,100], [[300,100],[300,50],[320,50],[320,90]]).
+		addSize([0,0], [[300,100],[300,50]]).
+		build(); 
+	  	  	  
+    //Adslot 1 declaration
+    gptadslots.push(googletag.defineSlot('/98544404/dexerto.com', [[1,1]], 'div-gpt-ad-31242-1')
+                             .addService(googletag.pubads()));
+    //Adslot 2 declaration
+    gptadslots.push(googletag.defineSlot('/98544404/dexerto.com', [[970,250],[970,90],[300,50],[320,90],[300,100],[728,90],[320,50],[970,140],[970,210]], 'div-gpt-ad-31242-2')
+                             .setTargeting('clppos', ['1'])
+                             .setTargeting('clplapo', ['top-banner'])
+			     .defineSizeMapping(topbanner)
+                             .addService(googletag.pubads()));
+    //Adslot 3 declaration
+    gptadslots.push(googletag.defineSlot('/98544404/dexerto.com', [[300,250]], 'div-gpt-ad-31242-3')
+                             .setTargeting('clppos', ['1'])
+                             .setTargeting('clplapo', ['top-mpu'])
+                             .addService(googletag.pubads()));
+    //Adslot 4 declaration
+    gptadslots.push(googletag.defineSlot('/98544404/dexerto.com', [[300,250]], 'div-gpt-ad-31242-4')
+                             .setTargeting('clppos', ['1'])
+                             .setTargeting('clplapo', ['top-mpu2'])
+                             .addService(googletag.pubads()));
+    //Adslot 5 declaration
+    gptadslots.push(googletag.defineSlot('/98544404/dexerto.com', [[300,250]], 'div-gpt-ad-31242-5')
+                             .setTargeting('clppos', ['2'])
+                             .setTargeting('clplapo', ['mid-mpu'])
+                             .addService(googletag.pubads()));
+    //Adslot 6 declaration
+    gptadslots.push(googletag.defineSlot('/98544404/dexerto.com', [[300,250]], 'div-gpt-ad-31242-6')
+                             .setTargeting('clppos', ['2'])
+                             .setTargeting('clplapo', ['bottom-mpu'])
+                             .addService(googletag.pubads()));
+    //Adslot 7 declaration
+    gptadslots.push(googletag.defineSlot('/98544404/dexerto.com', [[300,50],[320,50]], 'div-gpt-ad-31242-7')
+                             .setTargeting('clppos', ['2'])
+                             .setTargeting('clplapo', ['mobile-banner'])
+                             .addService(googletag.pubads()));
+    //Adslot 8 declaration
+    gptadslots.push(googletag.defineSlot('/98544404/dexerto.com', [[300,600],[300,250]], 'div-gpt-ad-31242-8')
+                             .setTargeting('clppos', ['2'])
+                             .setTargeting('clplapo', ['sky'])
+                             .addService(googletag.pubads()));
+    //Adslot 9 declaration
+    gptadslots.push(googletag.defineSlot('/98544404/dexerto.com', [[300,600],[300,250]], 'div-gpt-ad-31242-9')
+                             .setTargeting('clppos', ['2'])
+                             .setTargeting('clplapo', ['sky2'])
+                             .addService(googletag.pubads()));
+    //Adslot 10 declaration
+    gptadslots.push(googletag.defineSlot('/98544404/dexerto.com', [[970,90],[970,66],[970,250],[300,50],[320,90],[300,100],[728,90]], 'div-gpt-ad-31242-10')
+                             .setTargeting('clppos', ['2'])
+                             .setTargeting('clplapo', ['bottom-banner'])
+			     .defineSizeMapping(bottombanner)
+		             .setCollapseEmptyDiv(true)
+                             .addService(googletag.pubads()));
+    //Adslot 11 declaration - Out of Page
+    gptadslots.push(googletag.defineOutOfPageSlot('/98544404/dexerto.com', 'div-gpt-ad-31242-11')
+                             .addService(googletag.pubads()));
+    //Adslot 12 declaration - Out of Page
+    gptadslots.push(googletag.defineOutOfPageSlot('/98544404/Outstream', 'div-gpt-ad-474747410373361431-oop')
+                             .addService(googletag.pubads()));
+
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().setTargeting('clauone', ['dexerto.com'])
+                             .setTargeting('clurl', ['www.dexerto.com'])
+                             .setTargeting('clcontentid', ['4mn']);
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
 
 <script>
   googletag.cmd.push(function() {
@@ -140,11 +227,6 @@ var title = {"unfolded":"Expand","folded":"Collapse"};
 </head>
 
 <body class="home page-template-default page page-id-5 flex flex-column bg-dlight dx_body" style="min-height: 100vh;">
-<script type="text/javascript" src="https://cdn1.gamesports.net/js/catcher.js?netbar:2017-06-27"></script>
-<div id='div-gpt-ad-875929515544339584-1'>
-<script type='text/javascript'>
-				googletag.cmd.push(function() { googletag.display('div-gpt-ad-875929515544339584-1'); });
-			</script>
 
 	<!-- FACEBOOK SDK -->
 	<script>
@@ -165,7 +247,6 @@ var title = {"unfolded":"Expand","folded":"Collapse"};
 	   }(document, 'script', 'facebook-jssdk'));
 	</script>
 	<!-- END FACEBOOK SDK -->
-
 
     <script>
         var site_url = "https://www.dexerto.com";
@@ -379,7 +460,7 @@ jQuery( document ).ready(function() {
 <div class="col md-col-12 lg-col-8 sm-col-12 col-12 px1 no-px1-sm mb2 featured-news ">
 
     <div class="border p1 fn-header ">
-			          <span class="inherit caps px1 h6"><a class="inherit h6 bold" href="https://www.dexerto.com/esports/cod">Call of Duty</a> | 1 hour</span>
+			          <span class="inherit caps px1 h6"><a class="inherit h6 bold" href="https://www.dexerto.com/esports/cod">Call of Duty</a> | 2 hours</span>
 			    </div>
 
     <div class="grid-item grid-item-news">
@@ -469,7 +550,7 @@ jQuery( document ).ready(function() {
 <div class="col md-col-4 lg-col-4 sm-col-4 col-12 px1 no-px1-sm mb2 featured-news ">
 
     <div class="border p1 fn-header ">
-			          <span class="inherit caps px1 h6"><a class="inherit h6 bold" href="https://www.dexerto.com/esports/cod">Call of Duty</a> | 50 minutes</span>
+			          <span class="inherit caps px1 h6"><a class="inherit h6 bold" href="https://www.dexerto.com/esports/cod">Call of Duty</a> | 1 hour</span>
 			    </div>
 
     <div class="grid-item grid-item-news">
@@ -508,7 +589,7 @@ jQuery( document ).ready(function() {
 <div class="col md-col-4 lg-col-4 sm-col-4 col-12 px1 no-px1-sm mb2 featured-news ">
 
     <div class="border p1 fn-header ">
-			          <span class="inherit caps px1 h6"><a class="inherit h6 bold" href="https://www.dexerto.com/esports/cod">Call of Duty</a> | 2 minutes</span>
+			          <span class="inherit caps px1 h6"><a class="inherit h6 bold" href="https://www.dexerto.com/esports/cod">Call of Duty</a> | 36 minutes</span>
 			    </div>
 
     <div class="grid-item grid-item-news">
@@ -547,7 +628,7 @@ jQuery( document ).ready(function() {
 <div class="col md-col-4 lg-col-4 sm-col-4 col-12 px1 no-px1-sm mb2 featured-news ">
 
     <div class="border p1 fn-header ">
-			          <a class="inherit px1 caps bold h6">Other</a>
+			          <span class="inherit caps px1 h6"><a class="inherit h6 bold" href="https://www.dexerto.com/esports/csgo">CS:GO</a> | 47 minutes</span>
 			    </div>
 
     <div class="grid-item grid-item-news">
@@ -678,6 +759,44 @@ jQuery(document).ready(function($) {
 <div class="col md-col-6 lg-col-6 sm-col-6 col-12 px1 no-px1-sm mb2 grid-item grid-item-news">
 
 	<div class="sm-col-12 md-col-12 lg-col-12 col-6 col">
+        <a href="https://www.dexerto.com/news/low-hp-coldzera-north-single-handedly-counter-strike-csgo-dreamhack/34750" class="inherit">					<div class="dx-grid-thumb-container">
+				<img class="lazy dx-grid-thumb-img" data-original="https://www.dexerto.com/app/uploads/2017/08/SK-Gaming-CSGO-Esports-Clip-Funny-Sniper-AWP-626x314.jpg" alt=""/>			</div>
+		
+		        </a>
+        <span class="h6 caps px1 white btn-primary md-hide lg-hide">
+            <a href="https://www.dexerto.com/esports/csgo" class="inherit px1 caps bold h6">CS:GO</a>
+        </span>
+
+	</div>
+
+
+
+	<div class="md-col-12 lg-col-12 sm-col-12 grid-item col col-6 border p1 relative" style="border-top: 0;">
+		<div class="match">
+			<a href="https://www.dexerto.com/news/low-hp-coldzera-north-single-handedly-counter-strike-csgo-dreamhack/34750" class="inherit">				<h3 class="m0 h5 lh" style="font-weight: bold;">Low HP Coldzera Destroys North Team Single Handedly in Thrilling Round</h3>
+			</a>
+		
+            <div class="mt1 clearfix">
+                <div class="relative-time">
+                                            <span class="h6 caps px1 p1-0 white btn-primary sm-hide">
+                            <a href="https://www.dexerto.com/esports/csgo" class="inherit px1 caps bold h6">CS:GO</a>
+                        </span>
+                                        <span class="ml1 caps" style="font-size: .65rem">now</span>
+                </div>
+                <div class="share-button-home sm-hide md-hide"><a data-title="Low HP Coldzera Destroys North Team Single Handedly in Thrilling Round" data-share-url="https://www.dexerto.com/news/low-hp-coldzera-north-single-handedly-counter-strike-csgo-dreamhack/34750" style="background-color: #3D5AF1; font-size: 0.8rem;" class="clearfix btn btn-primary bold caps not-rounded border-none lh0 p0 share-btn">
+    <div class="left p1-2 ">
+        <img src="https://www.dexerto.com/app/themes/dexerto/assets/img/icons/share.svg" style="fill: white;" width="12" height="12">
+    </div>
+	        <div class="left p1-5 bg-white" style="font-size: .65rem; color: #333;line-height: 0.44rem; ">Share</div>
+    </a></div>
+            </div>
+        </div>
+		
+	</div>
+</div>
+<div class="col md-col-6 lg-col-6 sm-col-6 col-12 px1 no-px1-sm mb2 grid-item grid-item-news">
+
+	<div class="sm-col-12 md-col-12 lg-col-12 col-6 col">
         <a href="https://www.dexerto.com/news/blast-pro-series-confirms-biggest-teams-sk-g2-2017-csgo-tournament-faze-astralis-counter-strike/34741" class="inherit">					<div class="dx-grid-thumb-container">
 				<img class="lazy dx-grid-thumb-img" data-original="https://www.dexerto.com/app/uploads/2017/08/blast-pro-series-csgo-esports-tournament-copenhagen-626x314.jpg" alt=""/>			</div>
 		
@@ -700,7 +819,7 @@ jQuery(document).ready(function($) {
                                             <span class="h6 caps px1 p1-0 white btn-primary sm-hide">
                             <a href="https://www.dexerto.com/esports/csgo" class="inherit px1 caps bold h6">CS:GO</a>
                         </span>
-                                        <span class="ml1 caps" style="font-size: .65rem">2 hours</span>
+                                        <span class="ml1 caps" style="font-size: .65rem">3 hours</span>
                 </div>
                 <div class="share-button-home sm-hide md-hide"><a data-title="BLAST Pro Series Confirms High Profile Teams to Attend Debut CS:GO Tournament" data-share-url="https://www.dexerto.com/news/blast-pro-series-confirms-biggest-teams-sk-g2-2017-csgo-tournament-faze-astralis-counter-strike/34741" style="background-color: #3D5AF1; font-size: 0.8rem;" class="clearfix btn btn-primary bold caps not-rounded border-none lh0 p0 share-btn">
     <div class="left p1-2 ">
@@ -852,7 +971,7 @@ jQuery(document).ready(function($) {
                                             <span class="h6 caps px1 p1-0 white btn-primary sm-hide">
                             <a href="https://www.dexerto.com/esports/cod" class="inherit px1 caps bold h6">Call of Duty</a>
                         </span>
-                                        <span class="ml1 caps" style="font-size: .65rem">16 hours</span>
+                                        <span class="ml1 caps" style="font-size: .65rem">17 hours</span>
                 </div>
                 <div class="share-button-home sm-hide md-hide"><a data-title="Top 5 Plays From the CoD WWII Multiplayer Showmatch" data-share-url="https://www.dexerto.com/news/top-5-plays-pro-players-cod-wwii-multiplayer-showmatch/34736" style="background-color: #3D5AF1; font-size: 0.8rem;" class="clearfix btn btn-primary bold caps not-rounded border-none lh0 p0 share-btn">
     <div class="left p1-2 ">
@@ -865,6 +984,14 @@ jQuery(document).ready(function($) {
 		
 	</div>
 </div>
+	<!-- ADZONE -->
+	<div class="px1 mb2" style="clear: both;">
+		<div class="center">
+<a href="http://www.scufgaming.com"><img src="https://www.dexerto.com/app/uploads/2016/10/Contentfeed_en.jpg"></a>
+</div>	</div>
+	<!-- END ADZONE -->
+	
+
 <div class="col md-col-6 lg-col-6 sm-col-6 col-12 px1 no-px1-sm mb2 grid-item grid-item-news">
 
 	<div class="sm-col-12 md-col-12 lg-col-12 col-6 col">
@@ -890,7 +1017,7 @@ jQuery(document).ready(function($) {
                                             <span class="h6 caps px1 p1-0 white btn-primary sm-hide">
                             <a href="https://www.dexerto.com/esports/cod" class="inherit px1 caps bold h6">Call of Duty</a>
                         </span>
-                                        <span class="ml1 caps" style="font-size: .65rem">17 hours</span>
+                                        <span class="ml1 caps" style="font-size: .65rem">18 hours</span>
                 </div>
                 <div class="share-button-home sm-hide md-hide"><a data-title="Michael Condrey Addresses Potential WWII Beta Fixes During PlayStation Stream" data-share-url="https://www.dexerto.com/news/michael-condrey-addresses-potential-wwii-fixes-playstation-stream/34734" style="background-color: #3D5AF1; font-size: 0.8rem;" class="clearfix btn btn-primary bold caps not-rounded border-none lh0 p0 share-btn">
     <div class="left p1-2 ">
@@ -903,14 +1030,6 @@ jQuery(document).ready(function($) {
 		
 	</div>
 </div>
-	<!-- ADZONE -->
-	<div class="px1 mb2" style="clear: both;">
-		<div class="center">
-<a href="http://www.scufgaming.com"><img src="https://www.dexerto.com/app/uploads/2016/10/Contentfeed_en.jpg"></a>
-</div>	</div>
-	<!-- END ADZONE -->
-	
-
 <div class="col md-col-6 lg-col-6 sm-col-6 col-12 px1 no-px1-sm mb2 grid-item grid-item-news">
 
 	<div class="sm-col-12 md-col-12 lg-col-12 col-6 col">
@@ -936,7 +1055,7 @@ jQuery(document).ready(function($) {
                                             <span class="h6 caps px1 p1-0 white btn-primary sm-hide">
                             <a href="https://www.dexerto.com/esports/cod" class="inherit px1 caps bold h6">Call of Duty</a>
                         </span>
-                                        <span class="ml1 caps" style="font-size: .65rem">19 hours</span>
+                                        <span class="ml1 caps" style="font-size: .65rem">20 hours</span>
                 </div>
                 <div class="share-button-home sm-hide md-hide"><a data-title="Sledgehammer Announces New Additions for Weekend 2 of the CoD WWII Beta" data-share-url="https://www.dexerto.com/news/new-items-call-of-duty-cod-wwii-private-beta-weekend-2/34732" style="background-color: #3D5AF1; font-size: 0.8rem;" class="clearfix btn btn-primary bold caps not-rounded border-none lh0 p0 share-btn">
     <div class="left p1-2 ">
@@ -1012,7 +1131,7 @@ jQuery(document).ready(function($) {
                                             <span class="h6 caps px1 p1-0 white btn-primary sm-hide">
                             <a href="https://www.dexerto.com/esports/csgo" class="inherit px1 caps bold h6">CS:GO</a>
                         </span>
-                                        <span class="ml1 caps" style="font-size: .65rem">20 hours</span>
+                                        <span class="ml1 caps" style="font-size: .65rem">21 hours</span>
                 </div>
                 <div class="share-button-home sm-hide md-hide"><a data-title="DaZeD Reveals His Plans With Ex-IBUYPOWER Teammates to Make a New CS:GO Team" data-share-url="https://www.dexerto.com/news/dazed-reveals-plans-ex-ibuypower-teammates-counter-strike-azk-swag/34712" style="background-color: #3D5AF1; font-size: 0.8rem;" class="clearfix btn btn-primary bold caps not-rounded border-none lh0 p0 share-btn">
     <div class="left p1-2 ">
@@ -1126,7 +1245,7 @@ jQuery(document).ready(function($) {
                                             <span class="h6 caps px1 p1-0 white btn-primary sm-hide">
                             <a href="https://www.dexerto.com/esports/csgo" class="inherit px1 caps bold h6">CS:GO</a>
                         </span>
-                                        <span class="ml1 caps" style="font-size: .65rem">21 hours</span>
+                                        <span class="ml1 caps" style="font-size: .65rem">22 hours</span>
                 </div>
                 <div class="share-button-home sm-hide md-hide"><a data-title="Epic New Trailer Announces CS:GO&#8217;s Official Chinese Release Date" data-share-url="https://www.dexerto.com/news/september-15th-release-global-offensive-china-perfect-world-valve/34702" style="background-color: #3D5AF1; font-size: 0.8rem;" class="clearfix btn btn-primary bold caps not-rounded border-none lh0 p0 share-btn">
     <div class="left p1-2 ">
@@ -1202,7 +1321,7 @@ jQuery(document).ready(function($) {
                                             <span class="h6 caps px1 p1-0 white btn-primary sm-hide">
                             <a href="https://www.dexerto.com/esports/cod" class="inherit px1 caps bold h6">Call of Duty</a>
                         </span>
-                                        <span class="ml1 caps" style="font-size: .65rem">23 hours</span>
+                                        <span class="ml1 caps" style="font-size: .65rem">24 hours</span>
                 </div>
                 <div class="share-button-home sm-hide md-hide"><a data-title="Karma Mocks Professional CoD Teams for Their Roster Changes" data-share-url="https://www.dexerto.com/news/karma-mocks-professional-cod-teams-roster-changes-esports/34690" style="background-color: #3D5AF1; font-size: 0.8rem;" class="clearfix btn btn-primary bold caps not-rounded border-none lh0 p0 share-btn">
     <div class="left p1-2 ">
@@ -1240,7 +1359,7 @@ jQuery(document).ready(function($) {
                                             <span class="h6 caps px1 p1-0 white btn-primary sm-hide">
                             <a href="https://www.dexerto.com/esports/cod" class="inherit px1 caps bold h6">Call of Duty</a>
                         </span>
-                                        <span class="ml1 caps" style="font-size: .65rem">24 hours</span>
+                                        <span class="ml1 caps" style="font-size: .65rem">1 day</span>
                 </div>
                 <div class="share-button-home sm-hide md-hide"><a data-title="FaZe Attach Reveals What’s Required to be a Pro Player" data-share-url="https://www.dexerto.com/news/attach-reveals-required-pro-player-needed-pro-cod-player-esports/34688" style="background-color: #3D5AF1; font-size: 0.8rem;" class="clearfix btn btn-primary bold caps not-rounded border-none lh0 p0 share-btn">
     <div class="left p1-2 ">
@@ -1405,44 +1524,6 @@ jQuery(document).ready(function($) {
 		
 	</div>
 </div>
-<div class="col md-col-6 lg-col-6 sm-col-6 col-12 px1 no-px1-sm mb2 grid-item grid-item-news">
-
-	<div class="sm-col-12 md-col-12 lg-col-12 col-6 col">
-        <a href="https://www.dexerto.com/news/aches-reveals-new-star-lineup-call-duty-wwii/34693" class="inherit">					<div class="dx-grid-thumb-container">
-				<img class="lazy dx-grid-thumb-img" data-original="https://www.dexerto.com/app/uploads/2017/08/Aches-patrick-price-cod-faze-cloud9-best-moment-cwl-mlg-626x314.jpg" alt=""/>			</div>
-		
-		        </a>
-        <span class="h6 caps px1 white btn-primary md-hide lg-hide">
-            <a href="https://www.dexerto.com/esports/cod" class="inherit px1 caps bold h6">Call of Duty</a>
-        </span>
-
-	</div>
-
-
-
-	<div class="md-col-12 lg-col-12 sm-col-12 grid-item col col-6 border p1 relative" style="border-top: 0;">
-		<div class="match">
-			<a href="https://www.dexerto.com/news/aches-reveals-new-star-lineup-call-duty-wwii/34693" class="inherit">				<h3 class="m0 h5 lh" style="font-weight: bold;">Aches Reveals New All-Star Lineup for Call of Duty WWII</h3>
-			</a>
-		
-            <div class="mt1 clearfix">
-                <div class="relative-time">
-                                            <span class="h6 caps px1 p1-0 white btn-primary sm-hide">
-                            <a href="https://www.dexerto.com/esports/cod" class="inherit px1 caps bold h6">Call of Duty</a>
-                        </span>
-                                        <span class="ml1 caps" style="font-size: .65rem">1 day</span>
-                </div>
-                <div class="share-button-home sm-hide md-hide"><a data-title="Aches Reveals New All-Star Lineup for Call of Duty WWII" data-share-url="https://www.dexerto.com/news/aches-reveals-new-star-lineup-call-duty-wwii/34693" style="background-color: #3D5AF1; font-size: 0.8rem;" class="clearfix btn btn-primary bold caps not-rounded border-none lh0 p0 share-btn">
-    <div class="left p1-2 ">
-        <img src="https://www.dexerto.com/app/themes/dexerto/assets/img/icons/share.svg" style="fill: white;" width="12" height="12">
-    </div>
-	        <div class="left p1-5 bg-white" style="font-size: .65rem; color: #333;line-height: 0.44rem; ">Share</div>
-    </a></div>
-            </div>
-        </div>
-		
-	</div>
-</div>
 </div>	</div>	
 
         </div>
@@ -1549,20 +1630,20 @@ jQuery( document ).ready(function() {
 </div>
 <div class="flex mb2">
 	<div class="flex-none" style="width: 145px; height: 110px;">
-		<a href="https://www.dexerto.com/news/dexertos-top-20-players-infinite-warfare-19-karma-call-of-duty-esports-rankings/34643">
-							<img width="290" height="220" src="https://www.dexerto.com/app/uploads/2017/08/optic-karma-dexerto-top-20-esports-cod-call-of-duty-player-of-the-year-290x220.jpg" class="attachment-thumb-sml size-thumb-sml wp-post-image" alt="" srcset="https://www.dexerto.com/app/uploads/2017/08/optic-karma-dexerto-top-20-esports-cod-call-of-duty-player-of-the-year-290x220.jpg 290w, https://www.dexerto.com/app/uploads/2017/08/optic-karma-dexerto-top-20-esports-cod-call-of-duty-player-of-the-year-580x440.jpg 580w" sizes="(max-width: 290px) 100vw, 290px" />					</a>
-	</div>
-	<div class="ml1">
-		<h4 class="m0"><a href="https://www.dexerto.com/news/dexertos-top-20-players-infinite-warfare-19-karma-call-of-duty-esports-rankings/34643" class="inherit">#19 Karma &#8211; Dexerto&#8217;s Top 20 Players of Infinite Warfare</a></h4>		
-	</div>
-</div>
-<div class="flex mb2">
-	<div class="flex-none" style="width: 145px; height: 110px;">
 		<a href="https://www.dexerto.com/news/four-major-north-american-cod-roster-changes-everyones-talking/34743">
 							<img width="290" height="220" src="https://www.dexerto.com/app/uploads/2017/08/rostermania-north-america-esports-cod-call-of-duty-290x220.jpg" class="attachment-thumb-sml size-thumb-sml wp-post-image" alt="" srcset="https://www.dexerto.com/app/uploads/2017/08/rostermania-north-america-esports-cod-call-of-duty-290x220.jpg 290w, https://www.dexerto.com/app/uploads/2017/08/rostermania-north-america-esports-cod-call-of-duty-580x440.jpg 580w" sizes="(max-width: 290px) 100vw, 290px" />					</a>
 	</div>
 	<div class="ml1">
 		<h4 class="m0"><a href="https://www.dexerto.com/news/four-major-north-american-cod-roster-changes-everyones-talking/34743" class="inherit">The Four Major North American CoD Roster Changes Everyone&#8217;s Talking About</a></h4>		
+	</div>
+</div>
+<div class="flex mb2">
+	<div class="flex-none" style="width: 145px; height: 110px;">
+		<a href="https://www.dexerto.com/news/dexertos-top-20-players-infinite-warfare-19-karma-call-of-duty-esports-rankings/34643">
+							<img width="290" height="220" src="https://www.dexerto.com/app/uploads/2017/08/optic-karma-dexerto-top-20-esports-cod-call-of-duty-player-of-the-year-290x220.jpg" class="attachment-thumb-sml size-thumb-sml wp-post-image" alt="" srcset="https://www.dexerto.com/app/uploads/2017/08/optic-karma-dexerto-top-20-esports-cod-call-of-duty-player-of-the-year-290x220.jpg 290w, https://www.dexerto.com/app/uploads/2017/08/optic-karma-dexerto-top-20-esports-cod-call-of-duty-player-of-the-year-580x440.jpg 580w" sizes="(max-width: 290px) 100vw, 290px" />					</a>
+	</div>
+	<div class="ml1">
+		<h4 class="m0"><a href="https://www.dexerto.com/news/dexertos-top-20-players-infinite-warfare-19-karma-call-of-duty-esports-rankings/34643" class="inherit">#19 Karma &#8211; Dexerto&#8217;s Top 20 Players of Infinite Warfare</a></h4>		
 	</div>
 </div>
 <div class="flex mb2">
@@ -1624,15 +1705,6 @@ jQuery( document ).ready(function() {
         jQuery('#fallback-sb').show();
     }
 });
-
-<!-- /98544404/Testing/Display-4mediatest.github.io -->
-<div id='div-gpt-ad-1504188849908-0' style='height:1px; width:1px;'>
-<script>
-googletag.cmd.push(function() { googletag.display('div-gpt-ad-1504188849908-0'); });
-</script>
-</div>
-
-
 </script>
 </div><!-- END ADZONE --><!-- END SIDEBAR -->
 </div>    </div>
@@ -1699,7 +1771,7 @@ googletag.cmd.push(function() { googletag.display('div-gpt-ad-1504188849908-0');
 
 	<div class="bg-dblack">
 		<div class="container center p2">
-			<div class="h6 gray caps">&copy; 2017 Dexerto LTD | <a href="/cdn-cgi/l/email-protection#36525340535a594653447652534e534442591855595b" class="gray bold">Report Website Issue</a></div>
+			<div class="h6 gray caps">&copy; 2017 Dexerto LTD | <a href="/cdn-cgi/l/email-protection#88ecedfeede4e7f8edfac8ecedf0edfafce7a6ebe7e5" class="gray bold">Report Website Issue</a></div>
 		</div>
 	</div>
 	<!-- END FOOTER -->
@@ -1724,15 +1796,20 @@ var pollsL10n = {"ajax_url":"https:\/\/www.dexerto.com\/wp-admin\/admin-ajax.php
 "></script>
   <script src="https://www.dexerto.com/app/themes/dexerto/assets/js/ads.js?423514d25db9c8a42f607f9b0208ca0e32564b18
 "></script>
+ </script>
+<div id='div-gpt-ad-875929515544339584-oop' style='width:0px; height:0px;'>
+<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-875929515544339584-oop'); });
+		</script>
     
   </body>
 </html>
 
 <!-- Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
 
-Object Caching 6166/6395 objects using disk
+Object Caching 6186/6412 objects using disk
 Page Caching using disk: enhanced
 Minified using disk
-Database Caching 81/90 queries in 0.085 seconds using disk
+Database Caching 62/89 queries in 0.147 seconds using disk
 
- Served from: www.dexerto.com @ 2017-08-31 14:40:04 by W3 Total Cache -->
+ Served from: www.dexerto.com @ 2017-08-31 15:14:05 by W3 Total Cache -->
