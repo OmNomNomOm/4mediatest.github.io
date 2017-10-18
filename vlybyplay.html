@@ -1,0 +1,595 @@
+
+<!DOCTYPE html>
+  <!--[if IEMobile 7]><html class="no-js ie iem7" lang="en" dir="ltr"><![endif]-->
+  <!--[if lte IE 6]><html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en" dir="ltr"><![endif]-->
+  <!--[if (IE 7)&(!IEMobile)]><html class="no-js ie lt-ie9 lt-ie8" lang="en" dir="ltr"><![endif]-->
+  <!--[if IE 8]><html ng-csp class="no-js ie lt-ie9" lang="en" dir="ltr"><![endif]-->
+  <!--[if (gte IE 9)|(gt IEMobile 7)]><html ng-csp class="no-js ie" lang="en" dir="ltr"><![endif]-->
+  <!--[if !IE]><!--><html ng-csp class="no-js" lang="en" dir="ltr"><!--<![endif]-->
+<head>
+    <title>Test new publisher integration (Adops) | ESL Play</title>
+    <meta charset="utf-8" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="MobileOptimized" content="width" />
+<link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" />
+<meta name="y_key" content="db1fa126d6f6884b" />
+<meta name="language" content="en" />
+<meta http-equiv="cleartype" content="on" />
+<link rel="icon" href="/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://play.eslgaming.com/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/apple-touch-icon.png" />
+<link rel="apple-touch-icon" href="https://play.eslgaming.com/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/apple-touch-icon-57x57.png" sizes="57x57" />
+<link rel="apple-touch-icon" href="https://play.eslgaming.com/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/apple-touch-icon-120x120.png" sizes="120x120" />
+<link rel="apple-touch-icon" href="https://play.eslgaming.com/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/apple-touch-icon-114x114.png" sizes="114x114" />
+<link rel="apple-touch-icon" href="https://play.eslgaming.com/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/apple-touch-icon-60x60.png" sizes="60x60" />
+<link rel="apple-touch-icon" href="https://play.eslgaming.com/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/apple-touch-icon-72x72.png" sizes="72x72" />
+<link rel="apple-touch-icon-precomposed" href="https://play.eslgaming.com/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/apple-touch-icon-precomposed.png" />
+<link rel="apple-touch-icon" href="https://play.eslgaming.com/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/apple-touch-icon-76x76.png" sizes="76x76" />
+<meta name="robots" content="all" />
+<meta name="yandex-verification" content="7a281ca7deea57fc" />
+<meta name="Expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
+<meta name="bitly-verification" content="40238f85754d" />
+<link rel="icon" href="/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/favicon.png" type="image/png" />
+<link rel="shortcut icon" href="/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/favicon-96x96.png" type="image/png" sizes="96x96" />
+<link rel="shortcut icon" href="/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/favicon-16x16.png" type="image/png" sizes="16x16" />
+<link rel="shortcut icon" href="/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/favicon-32x32.png" type="image/png" sizes="32x32" />
+<meta property="og:image" content="https://cdn-eslgaming.akamaized.net/play/eslgfx/" />
+<meta name="google-site-verification" content="IekuIdmml4ttb4f2rDr7n0Tu872TO_FcORTbBET7XQQ" />
+<meta name="keywords" content="esl, eslgaming, esports, electronic sports league, esports league, competitive gaming, esl one, intel extreme masters, esl open, esl major, esl pro, gaming, league, tournament, multiplayer, community, clan, forum, server, online, replay, demo, lol, league of legends, wot, world of tanks, cs, css, csgo, counter-strike global offensive, skill, hearthstone, cod, cod4, bo3, call of duty, black ops 3, ava, halo, crossfire, battlefield 4, bf4, heroes of the storm, battlefield hardline, smite, fifa, combat arms, starcraft 2, sc2, evolve, war rock, pokerth, magicka, mortal kombat x, mkx, esl tv, esl national championship, esl meisterschaft, esl mistrzostw polski, esl championnat national, esl uk premiership, esl nordic nationals, esl south east europe championship, esl ?????????? ?????????, esl pro league, world championship series, wcs, wargming.net league, wgl, turtle entertainment" />
+<meta name="description" content="World leading platform for esports. Play CS:GO, LoL, CoD, FIFA, SC2, WoT and more against real opponents for prizes and cash." />
+<meta name="copyright" content="Turtle Entertainment GmbH" />
+<meta name="publisher" content="Turtle Entertainment GmbH" />
+<meta name="author" content="Turtle Entertainment GmbH" />
+<meta name="programmer" content="Turtle Entertainment GmbH" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<meta name="viewport" content="width=device-width" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800&subset=latin,latin-ext,cyrillic,cyrillic-ext,greek,greek-ext,vietnamese' rel='stylesheet' type='text/css'>
+    <style>
+@import url("https://play.eslgaming.com/sites/all/themes/omega/omega/css/modules/system/system.base.css?oxys8g");
+@import url("https://play.eslgaming.com/sites/all/themes/omega/omega/css/modules/system/system.menus.theme.css?oxys8g");
+@import url("https://play.eslgaming.com/sites/all/themes/omega/omega/css/modules/system/system.messages.theme.css?oxys8g");
+@import url("https://play.eslgaming.com/sites/all/themes/omega/omega/css/modules/system/system.theme.css?oxys8g");
+@import url("https://play.eslgaming.com/modules/node/node.css?oxys8g");
+@import url("https://play.eslgaming.com/sites/all/themes/omega/omega/css/modules/field/field.theme.css?oxys8g");
+@import url("https://play.eslgaming.com/sites/all/modules/views/css/views.css?oxys8g");
+@import url("https://play.eslgaming.com/sites/all/themes/omega/omega/css/modules/user/user.base.css?oxys8g");
+@import url("https://play.eslgaming.com/sites/all/themes/omega/omega/css/modules/user/user.theme.css?oxys8g");
+@import url("https://play.eslgaming.com/sites/all/modules/ckeditor/css/ckeditor.css?oxys8g");
+</style>
+<link type="text/css" rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/themes/base/minified/jquery-ui.min.css" media="all" />
+<style>
+@import url("https://play.eslgaming.com/sites/all/modules/ctools/css/ctools.css?oxys8g");
+@import url("https://play.eslgaming.com/sites/all/modules/panels/css/panels.css?oxys8g");
+@import url("https://play.eslgaming.com/sites/all/modules/turtle_entertainment/te_chatbar/css/fixes.css?oxys8g");
+@import url("https://play.eslgaming.com/sites/all/modules/panels/plugins/layouts/flexible/flexible.css?oxys8g");
+@import url("https://play.eslgaming.com/sites/eslgaming_play_prod/files/ctools/css/73da4f49ff753ce73a23eec46d9d0534.css?oxys8g");
+@import url("https://play.eslgaming.com/sites/all/modules/turtle_entertainment/te_cookie_guideline/css/te-cookie-guideline.css?oxys8g");
+</style>
+<style>
+@import url("https://play.eslgaming.com/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/dist/styles/eslgaming-play-base.styles.css?oxys8g");
+@import url("https://play.eslgaming.com/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/dist/styles/iconfont/esl-icons.css?oxys8g");
+</style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="https://play.eslgaming.com/misc/jquery.once.js?v=1.2"></script>
+<script src="https://play.eslgaming.com/misc/drupal.js?oxys8g"></script>
+<script src="https://play.eslgaming.com/sites/all/themes/omega/omega/js/no-js.js?oxys8g"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-resource.min.js"></script>
+<script src="https://play.eslgaming.com/sites/all/libraries/momentjs/moment-with-locales.min.js?v=2.10.6"></script>
+<script src="https://play.eslgaming.com/sites/all/libraries/momentjs/moment-timezone-with-data.min.js?v=2.10.6"></script>
+<script src="https://play.eslgaming.com/sites/all/libraries/jstimezonedetect/jstz.min.js?v=1.0.4"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.7.0/angular-translate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-interpolation-messageformat/2.7.0/angular-translate-interpolation-messageformat.min.js"></script>
+<script src="https://play.eslgaming.com/sites/all/modules/turtle_entertainment/te_translate/js/messageformat/messageformat.js?v=0.2.2"></script>
+<script src="https://play.eslgaming.com/sites/all/modules/turtle_entertainment/te_translate/js/languagemapper/languageMapper.js?v=0.0.1"></script>
+<script src="/translation/jsonp/en?v=8f4bf8c96b95ea3592b782fbb30b9c39"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+<script>var ESLuserID = 0, ESLteamID = [], navigation_url="", nav="/test_showcase?google_console=1";</script>
+<script src="https://play.eslgaming.com/profiles/eslgaming_play/modules/turtle_entertainment/te_frontend/dist/app.js?oxys8g"></script>
+<script>(function() {
+    var tz = jstz.determine().name();
+    var momentTz = moment.tz(tz);
+
+    Drupal.settings.user = {
+        'id': null,
+        'timezone': {
+            'name': tz,
+            'short': momentTz.zoneName()
+        },
+        'geoIpCountry': ''
+    };
+}
+)();</script>
+<script src="https://cdn-eslgaming.akamaized.net/play/eslstatic/skins/v2008_base/js/dist/bundle.js"></script>
+<script>var gfx_skin = 'https://cdn-eslgaming.akamaized.net/play/eslstatic/skins/v2008_base', gfx_static = 'https://cdn-eslgaming.akamaized.net/play/eslstatic', gfx = 'https://cdn-eslgaming.akamaized.net/play/eslgfx';</script>
+<script>    window.universal_variable = {
+        "page": {
+            "category": "play.eslgaming.com/test_showcase"
+        }
+    }</script>
+<script defer="defer">(function() {
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = 'https://d3c3cq33003psk.cloudfront.net/opentag-167106-playeslgamingcom.js';
+  var d = document.getElementsByTagName('script')[0];
+  d.parentNode.insertBefore(s, d);
+})();</script>
+<script src="https://play.eslgaming.com/sites/all/modules/turtle_entertainment/te_translate/js/messageformat/locale/en.js?oxys8g"></script>
+<script>
+    window.originalMessageFormat = MessageFormat.locale.en;
+    MessageFormat.locale.en = function(n){return window.originalMessageFormat(Math.abs(n));};
+    </script>
+<script src="https://play.eslgaming.com/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/dist/scripts/main.js?oxys8g"></script>
+<script src="https://play.eslgaming.com/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/dist/scripts/templates.js?oxys8g"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","legacy_content":{"prefix":"play\/","esl_section":"","eslSectionPath":""},"eslapi_host":"https:\/\/api.eslgaming.com\/play\/v1"});</script>
+    <script>
+  !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+  arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+  d.src='https://d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+  insertBefore(d,q)}(window,document,'script','_gs');
+
+  _gs('GSN-170878-B');
+</script></head>
+<body class="html not-front not-logged-in page-node page-node- page-node-1472 node-type-edition-page node-promoted section-test-showcase">
+    <!-- Google Tag Manager -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBCCT3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PBCCT3');</script>
+<!-- End Google Tag Manager -->        <div class="l-networkbar">
+      <div class="l-region l-region--site-top">
+    <div id="block-te-networkbar-v2-networkbar-v2-block" class="block block--te-networkbar-v2 block--te-networkbar-v2-networkbar-v2-block">
+        <div class="block__content">
+    <script>NETWORKBAR_TITLE = "ESL Play"; NETWORKBAR_WIDTH= 1100;</script>
+<script src="https://cdn-eslgaming.akamaized.net/misc/media/networkbar/networkbar.min.js"></script>  </div>
+</div>
+  </div>
+</div>
+
+<a id="banner_background" class="banner">
+    </a>
+
+<div id="banner_artwork" class="banner">
+    </div>
+
+<div class="l-page">
+        <div id="dhtmltooltip"></div>
+
+    <div class="l-navigation-bar">
+        <div class="l-navigation-main">
+              <div class="l-region l-region--navigation-first">
+    
+<a href="/user/home">
+    <ng-include src="'icons/esl/play.html'" class="te_breadcrumb__eslplay-logo"></ng-include>
+</a>
+                       <div id="block-te-breadcrumb-te-breadcrumb-main" class="block block--te-breadcrumb block--te-breadcrumb-te-breadcrumb-main">
+        <div class="block__content">
+    <ng-include src="'icons/esl/intel.html'" class="te_breadcrumb__intel-logo"></ng-include>
+
+<div class="te_breadcrumb__wrapper">
+    <a href="/games" class="te_breadcrumb__games no-decoration">
+        <span class="te_breadcrumb__games__label">Games</span>
+    </a>
+            <ul class="te_breadcrumb__crumbs">
+            <li class="te_breadcrumb__crumb">
+                                <ng-include src="'icons/esl/breadcrumb_divider.html'" class="te_breadcrumb__crumb-divider"></ng-include>
+                <a href="/test_showcase/" class="te_breadcrumb__crumb--link">test_showcase</a>
+            </li>
+                    </ul>
+    </div>
+  </div>
+</div>
+  </div>
+
+            <div class="userbox" id="user_container">
+                  <div class="l-region l-region--navigation-second">
+    <div id="block-te-eslid-login" class="block block--te-eslid block--te-eslid-login">
+        <div class="block__content">
+    <div class="te-eslid__login">
+    <a href="/user/oauth2/login" class="btn btn-primary btn-small">
+        Log in/Register    </a>
+</div>
+  </div>
+</div>
+  </div>
+            </div>
+
+            <div class="helpbox" id="help_container">
+                <ul>
+                    <li>
+                        <a href="/help">Help</a>
+                    </li>
+                    <li>
+                        <a href="http://forum.eslgaming.com/" target="_blank">Forum</a>
+                    </li>
+                    <li>
+                        <a href="/search">Search</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="banner_top" class="banner">
+            </div>
+
+    <div class="l-main">
+        <div class="l-main-inner">
+                        <div class="l-content" role="main">
+                  <div class="l-region l-region--content-head">
+    <div id="block-context-menu-contextmenu" class="block block--context-menu block--context-menu-contextmenu">
+        <div class="block__content">
+      </div>
+</div>
+  </div>
+                                                                <div class="panel-flexible panels-flexible-edition_portal_page clearfix" >
+<div class="panel-flexible-inside panels-flexible-edition_portal_page-inside">
+<div class="panels-flexible-row panels-flexible-row-edition_portal_page-11 panels-flexible-row-first clearfix ">
+  <div class="inside panels-flexible-row-inside panels-flexible-row-edition_portal_page-11-inside panels-flexible-row-inside-first clearfix">
+<div class="panels-flexible-region panels-flexible-region-edition_portal_page-notification panels-flexible-region-first panels-flexible-region-last column12">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-edition_portal_page-notification-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<div class="panel-pane pane-custom pane-3">
+          <h2 class="pane-title">-dev</h2>
+          <div class="pane-content">
+  <a href="/premium" target="_blank" ><img src="https://eslstatic.net/skins/v2008_base/content_global/premium_3d.jpg" style="float:right; width: 120px;height: 120px;display: block;  margin:0px 0px 5px 10px;cursor:pointer;"></a> 
+
+Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>
+Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member afghnd benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>Do you like what we're doing and would like to support us? Become an ESL premium member and benefit from a bunch of premium-only features for just up to €3,00 a month!
+<br/>
+<br><br><a href="/premium" target="_blank" class="btn btn-primary btn-lg btn-block">Get Premium!</a>
+</div>    </div>
+    </div>  </div>
+</div>
+  </div>
+</div>
+<div class="panels-flexible-row panels-flexible-row-edition_portal_page-1 clearfix ">
+  <div class="inside panels-flexible-row-inside panels-flexible-row-edition_portal_page-1-inside clearfix">
+<div class="panels-flexible-column panels-flexible-column-edition_portal_page-5 panels-flexible-column-first ">
+  <div class="inside panels-flexible-column-inside panels-flexible-column-edition_portal_page-5-inside panels-flexible-column-inside-first">
+<div class="panels-flexible-row panels-flexible-row-edition_portal_page-6 panels-flexible-row-first clearfix ">
+  <div class="inside panels-flexible-row-inside panels-flexible-row-edition_portal_page-6-inside panels-flexible-row-inside-first clearfix">
+<div class="panels-flexible-region panels-flexible-region-edition_portal_page-box_1 panels-flexible-region-first panels-flexible-region-last column6">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-edition_portal_page-box_1-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+  </div>
+</div>
+  </div>
+</div>
+<div class="panels-flexible-row panels-flexible-row-edition_portal_page-10 panels-flexible-row-last clearfix ">
+  <div class="inside panels-flexible-row-inside panels-flexible-row-edition_portal_page-10-inside panels-flexible-row-inside-last clearfix">
+<div class="panels-flexible-region panels-flexible-region-edition_portal_page-box_4 panels-flexible-region-first panels-flexible-region-last column6">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-edition_portal_page-box_4-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div>
+<div class="panels-flexible-column panels-flexible-column-edition_portal_page-2 panels-flexible-column-last ">
+  <div class="inside panels-flexible-column-inside panels-flexible-column-edition_portal_page-2-inside panels-flexible-column-inside-last">
+<div class="panels-flexible-row panels-flexible-row-edition_portal_page-3 panels-flexible-row-first clearfix ">
+  <div class="inside panels-flexible-row-inside panels-flexible-row-edition_portal_page-3-inside panels-flexible-row-inside-first clearfix">
+<div class="panels-flexible-region panels-flexible-region-edition_portal_page-box_right panels-flexible-region-first panels-flexible-region-last column6">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-edition_portal_page-box_right-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+  </div>
+</div>
+  </div>
+</div>
+<div class="panels-flexible-row panels-flexible-row-edition_portal_page-7 clearfix ">
+  <div class="inside panels-flexible-row-inside panels-flexible-row-edition_portal_page-7-inside clearfix">
+<div class="panels-flexible-region panels-flexible-region-edition_portal_page-forum panels-flexible-region-first panels-flexible-region-last column6">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-edition_portal_page-forum-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+  </div>
+</div>
+  </div>
+</div>
+<div class="panels-flexible-row panels-flexible-row-edition_portal_page-9 panels-flexible-row-last clearfix ">
+  <div class="inside panels-flexible-row-inside panels-flexible-row-edition_portal_page-9-inside panels-flexible-row-inside-last clearfix">
+<div class="panels-flexible-region panels-flexible-region-edition_portal_page-box_5 panels-flexible-region-first panels-flexible-region-last column6">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-edition_portal_page-box_5-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div>
+<div class="panels-flexible-row panels-flexible-row-edition_portal_page-8 panels-flexible-row-last clearfix ">
+  <div class="inside panels-flexible-row-inside panels-flexible-row-edition_portal_page-8-inside panels-flexible-row-inside-last clearfix">
+<div class="panels-flexible-region panels-flexible-region-edition_portal_page-bottom panels-flexible-region-first panels-flexible-region-last column12">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-edition_portal_page-bottom-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<div class="panel-pane pane-custom pane-1 virool">
+              <div class="pane-content">
+  <style>
+  .virool .pane-title {
+    margin-left: 0px;
+    background: #E5E5E5;
+    box-shadow:none;
+padding: 0px 0px 0px 0px; 
+  }
+
+ .panels-flexible-row .virool  {padding: 0px 0px 0px 0px; }
+
+  .panel-pane .pane-custom pane-1 .frontpage-games {
+box-shadow: 0px 0px 0px 0px rgba(0,0,0,0)!important;
+border-radius:0px;
+margin-bottom: 0px;
+padding: 0px 0px 0px 0px; 
+}
+  .virool  .pane-content {
+padding: 0px 0px 0px 0px; 
+    margin-left: 0px;
+background: #E5E5E5;
+box-shadow:none !important;
+  }
+.virool  { box-shadow: none;padding: 0px 0px 0px 0px;}
+
+  .justify-start {
+    justify-content: flex-start;
+  }
+</style>
+
+<center><div id="virool-player-test"></div>    </div>
+    </div><div class="panel-pane pane-custom pane-2">
+              <div class="pane-content">
+  <div style="background: transparent">
+ESL is love!
+</div>    </div>
+    </div>  </div>
+</div>
+  </div>
+</div>
+</div>
+</div>
+                            </div>
+            <div class="l-sidebar--first">
+                                                <div id="banner_mpu" class="banner"></div>
+                            </div>
+        </div>
+    </div>
+    <div id="banner_superbanner" class="banner"></div>
+
+    <footer class="l-footer" role="contentinfo">
+          <div class="l-region l-region--footer">
+    <div id="block-block-126" class="block block--block block--block-126">
+        <div class="block__content">
+    <div class="l-navigation-footer">
+        <div class="l-navigation-footer-inner">
+            <nav class="navigation-footer games">
+                <h4>Games</h4>
+                <ul>
+                    <li><a href="/allianceofvaliantarms/" title="Alliance of Valiant Arms">Alliance of Valiant Arms</a></li>
+                    <li><a href="/arenaofvalor" title="Arena of Valor">Arena of Valor</a></li>
+                    <li><a href="/battlerite/" title="Battlerite">Battlerite</a></li>
+                    <li><a href="/blazblue/" title="BLAZBLUE">BLAZBLUE</a></li>
+                    <li><a href="/clashroyale/" title="Clash Royale">Clash Royale</a></li>
+                    <li><a href="/counterstrike/" title="Counter-Strike">Counter-Strike</a></li>
+                    <li><a href="/crossfire/" title="Crossfire">Crossfire</a></li>
+                    <li><a href="/deadoralive/" title="Dead or Alive 5">Dead or Alive 5</a></li>
+                    <li><a href="/discjam/" title="Disc Jam">Disc Jam</a></li>
+                    <li><a href="/dota2/" title="Dota 2">Dota 2</a></li>
+                    <li><a href="/dragonball/" title="Dragon Ball">Dragon Ball</a></li>
+                    <li><a href="/echoarena/" title="Echo Arena">Echo Arena</a></li>
+                    <li><a href="/fifa/" title="FIFA">FIFA</a></li>
+                    <li><a href="/forhonor/" title="For Honor">For Honor</a></li>
+                    <li><a href="/gtav/" title="GTA V">GTA V</a></li>
+                    <li><a href="/guiltygear/" title="Guilty Gear">Guilty Gear</a></li>
+                    <li><a href="/handofthegods/" title="Hand of the Gods">Hand of the Gods</a></li>
+                    <li><a href="/haxball/" title="HaxBall">HaxBall</a></li>
+                    <li><a href="/hearthstone/" title="Hearthstone">Hearthstone</a></li>
+                    <li><a href="/heavymetalmachines/" title="Heavy Metal Machines">Heavy Metal Machines</a></li>
+                    <li><a href="/heroesofthestorm/" title="Heroes of the Storm">Heroes of the Storm</a></li>
+                    <li><a href="/injustice/" title="Injustice">Injustice</a></li>
+                    <li><a href="/leagueoflegends/" title="League of Legends">League of Legends</a></li>
+                    <li><a href="/lineofsight/global/" title="Line of Sight">Line of Sight</a></li>
+                    <li><a href="/madden/" title="Madden">Madden</a></li>
+                    <li><a href="/mantisburnracing/" title="Mantis Burn Racing">Mantis Burn Racing</a></li>
+                    <li><a href="/mariokart/" title="Mario Kart 8">Mario Kart 8</a></li>
+                    <li><a href="/moderncombat/" title="Modern Combat 5">Modern Combat 5</a></li>
+                    <li><a href="/mortalkombat/" title="Mortal Kombat">Mortal Kombat</a></li>
+                    <li><a href="/mushroomwars/global/" title="Mushroom Wars 2">Mushroom Wars 2</a></li>
+                    <li><a href="/narutoshippuden/" title="Naruto Shippuden">Naruto Shippuden</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/nba2k17/" title="NBA 2K17">NBA 2K17</a></li>
+                    <li><a href="https://www.playstation-esports.de/nba2k18/championship" title="NBA 2K18">NBA 2K18</a></li>
+                    <li><a href="/overwatch/" title="Overwatch">Overwatch</a></li>
+                    <li><a href="/paladins/" title="Paladins">Paladins</a></li>
+                    <li><a href="/pokerth/pc/" title="PokerTH">PokerTH</a></li>
+                    <li><a href="/powerrangers/" title="Power Rangers">Power Rangers</a></li>
+                    <li><a href="/projectcars/" title="Project CARS">Project CARS</a></li>
+                    <li><a href="/quake/" title="Quake Champions">Quake Champions</a></li>
+                    <li><a href="/rainbowsix/" title="Rainbow Six: Siege">Rainbow Six: Siege</a></li>
+                    <li><a href="/rocketleague/" title="Rocket League">Rocket League</a></li>
+                    <li><a href="/skill/" title="S.K.I.L.L. - Special Forces 2">S.K.I.L.L. - Special Forces 2</a></li>
+                    <li><a href="/skullgirls/" title="Skullgirls 2nd Encore">Skullgirls 2nd Encore</a></li>
+                    <li><a href="/smite/" title="SMITE">SMITE</a></li>
+                    <li><a href="/splatoon/" title="Splatoon 2">Splatoon 2</a></li>
+                    <li><a href="/starcraft/" title="StarCraft II">StarCraft II</a></li>
+                    <li><a href="/streetfighter/" title="Street Fighter">Street Fighter</a></li>
+                    <li><a href="/tekken/" title="Tekken 7">Tekken 7</a></li>
+                    <li><a href="/theelderscrolls/" title="The Elder Scrolls">The Elder Scrolls</a></li>
+                    <li><a href="/theunspoken/" title="The Unspoken">The Unspoken</a></li>
+                    <li><a href="/totalwar/" title="Total War: Shogun 2">Total War: Shogun 2</a></li>
+                    <li><a href="/trackmania/" title="TrackMania">TrackMania</a></li>
+                    <li><a href="/trickytowers/" title="Tricky Towers">Tricky Towers</a></li>
+                    <li><a href="/unrealtournament/" title="Unreal Tournament">Unreal Tournament</a></li>
+                    <li><a href="/uncharted/" title="Uncharted Multiplayer">Uncharted Multiplayer</a></li>
+                    <li><a href="/warrock/global/" title="War Rock">War Rock</a></li>
+                    <li><a href="/warcraft/global/" title="Warcraft 3">Warcraft 3</a></li>
+                    <li><a href="/warface/" title="Warface">Warface</a></li>
+                    <li><a href="/worldoftanks/" title="World of Tanks">World of Tanks</a></li>
+                    <li><a href="/wrc/" title="WRC 7">WRC 7</a></li>
+                    <li><a href="/zula/" title="Zula">Zula</a></li>
+                </ul>
+            </nav>
+            <nav class="navigation-footer portals">
+                <h4>Regions</h4>
+                <ul>
+                    <li><a href="/global/" title="Global">Global</a></li>
+                    <li><a href="/america/" title="America">America</a></li>
+                    <li><a href="/adria/" title="Adria">Adria</a></li>
+                    <li><a href="/asia/" title="Asia">Asia</a></li>
+                    <li><a href="/australia/" title="Australia">Australia</a></li>
+                    <li><a href="/benelux/" title="Benelux">Benelux</a></li>
+                    <li><a href="/bulgaria/" title="Bulgaria">Bulgaria</a></li>
+                    <li><a href="/brazil/" title="Brazil">Brazil</a></li>
+                    <li><a href="/czsk/" title="CIS">CZSK</a></li>
+                    <li><a href="/france/" title="France">France</a></li>
+                    <li><a href="/germany/" title="Germany">Germany</a></li>
+                    <li><a href="/greece/" title="Greece">Greece</a></li>
+                    <li><a href="/hungary/" title="Hungary">Hungary</a></li>
+                    <li><a href="/italy/" title="Italy">Italy</a></li>
+
+                </ul>
+                <ul>
+                    <li><a href="/india/" title="India">India</a></li>
+                    <li><a href="/japan/" title="Japan">Japan</a></li>
+                    <li><a href="/latin-america/" title="Latin America">Latin America</a></li>
+                    <li><a href="/nordic/" title="Nordic">Nordic</a></li>
+                    <li><a href="/poland/" title="Poland">Poland</a></li>
+                    <li><a href="/portugal/" title="Portugal">Portugal</a></li>
+                    <li><a href="/romania/" title="Romania">Romania</a></li>
+                    <li><a href="/cis/" title="CIS">Russia&amp;CIS</a></li>
+                    <li><a href="/southeast-asia/" title="Southeast Asia">Southeast Asia</a></li>
+                    <li><a href="/spain/" title="Spain">Spain</a></li>
+                    <li><a href="/turkey/" title="Turkey">Turkey</a></li>
+                    <li><a href="/uk/" title="United Kingdom">United Kingdom</a></li>
+                </ul>
+            </nav>
+            <nav class="navigation-footer social-media">
+                <h4>Social</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/ESL" target="_blank">Facebook</a></li>
+                    <li><a href="http://forum.eslgaming.com/" target="_blank">Forum</a></li>
+                    <li><a href="/search/">Search</a></li>
+                    <li><a href="https://steamcommunity.com/groups/esl" target="_blank">Steam Community</a></li>
+                    <li><a href="https://www.twitch.tv/team/esl/" target="_blank">Twitch</a></li>
+                    <li><a href="https://twitter.com/ESL" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.youtube.com/user/esltv" target="_blank">YouTube</a></li>
+                </ul>
+            </nav>
+            <nav class="navigation-footer site-links">
+                <h4>About us</h4>
+                   <ul>
+                    <li><a href="https://aboutads.info/choices" target="_blank">Ad Choices</a></li>
+                    <li><a href="http://www.turtle-entertainment.com/career/" target="_blank">Career</a></li>
+                    <li><a href="/anticheat/">ESL Anticheat</a></li>
+                    <li><a href="/global/league-structure/">ESL League Structure</a></li>
+                    <li><a href="/playercard_portal/" target="_blank">ESL Playercard</a></li>
+                    <li><a href="/order/" target="_blank">ESL Premium</a></li>
+                    <li><a href="/play-app/" target="_blank">ESL Mobile App</a></li>
+                    <li><a href="/windows-10-app/" target="_blank">ESL Windows 10 App</a></li>
+                    <li><a href="/xbox-integration/" target="_blank">ESL Xbox Integration</a></li>
+                    <li><a href="/ps-dashboard/" target="_blank">PlayStation Dashboard</a></li>
+                    <li><a href="/impressum/">Impressum</a></li>
+                    <li><a href="/join-the-staff/">Join the Staff</a></li>
+                    <li><a href="/media/">Media</a></li>
+                    <li><a href="https://www.eslgaming.com/press" target="_blank">Press</a></li>
+                    <li><a href="/steamidfinder">SteamID Finder</a></li>
+                    <li><a href="/contact/">Support</a></li>
+                    <li><a href="/termsofuse/">Terms of Use & <br/>Privacy Policy</a></li>
+                    <li><a href="/trusted-by/">Trusted by</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>  </div>
+</div>
+  </div>
+    </footer>
+    <footer class="l-footer-site-info">
+        <div class="l-footer-site-info-inner">
+            <img class="footer-site-logo" src="/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/dist/images/esl_2014_horizontal_light.png"
+                 alt=""/>
+
+            <img class="footer-site-logo--intel" src="/profiles/eslgaming_play/themes/eslgaming/eslgaming_play_base/dist/images/powered_by_intel.png"
+                 alt=""/>
+
+            <div class="footer-site-text">
+                <strong>play.ESLGaming.com</strong> is the world largest independent league for esports. Established in
+                1997, we're proud to be the home to those who love competitive gaming.
+            </div>
+        </div>
+    </footer>
+    <footer class="l-footer-copyright">
+        ESL is a brand of Turtle Entertainment GmbH. &#169; 2017    </footer>
+</div>
+<div id="banner_out_of_page" class="banner"></div>
+
+<div id="cookiebar" style="display: none;">
+    <div class="cookie-guideline-container">
+        <div class="cookie-notice cookie-guideline-info">
+            <div class="cookie-text-center">
+                <p>Cookies help us in providing our services. By using our services you agree that we set cookies.                    <a href="https://play.eslgaming.com/cookie-policy" target="_blank">More information</a>
+                    <button id="cookie-btn" class="btn btn-small cookie-btn">OK</button></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    jQuery(document).ready(function () {
+        jQuery('#cookie-btn').click(function () {
+            jQuery.cookie('_cp', 'true', { expires: 365 * 10, path: '/' });
+            jQuery('#cookiebar').fadeOut(250, function () {
+                jQuery(this).remove();
+            });
+        });
+        if (typeof jQuery.cookie != "undefined" && jQuery.cookie('_cp') == null) {
+            jQuery('#cookiebar').show();
+        }
+    });
+</script>
+
+
+
+    </body>
+</html>
